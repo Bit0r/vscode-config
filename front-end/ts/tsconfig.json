@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "../js", //输出路径
+        "strict": true, //超级严格模式
+        "newLine": "lf", //Unix风格换行
+        "sourceMap": true, //调试信息
+        "module": "CommonJS",//CommonJS的类型的模块
+        "target": "ES6" //生成ES6标准的js文件
+    },
+    "files": [
+        "a.ts" //源文件
+    ]
+}

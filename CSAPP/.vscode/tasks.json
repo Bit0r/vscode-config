@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${fileDirname}/csapp.h",
+                "${fileDirname}/csapp.c",
+                "${file}",
+                "-o",
+                "${workspaceFolder}/out/${fileBasenameNoExtension}",
+                "-O0",
+                "-ggdb3",
+                "-Wall",
+                "-std=gnu11",
+                "-lpthread", //Linux多线程库
+                "-Wno-format",
+                "-finput-charset=UTF-8"
+            ],
+            "presentation": {
+                "reveal": "silent",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

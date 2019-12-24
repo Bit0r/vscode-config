@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "MinGW64",
+            "defines": [
+                "_DEBUG",
+                "UNICODE"
+            ],
+            "cppStandard": "c++20",
+            "compilerPath": "D:/Program Files/mingw64/bin/g++.exe",
+            "intelliSenseMode": "gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/src"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile",
+            "command": "gcc",
+            "args": [
+                "${file}", // 指定编译源代码文件
+                "-o",       //自定义生成文件
+                "${workspaceFolder}/build/${fileBasenameNoExtension}.s", //指定生成文件目录
+                "-Og", // 优化级别
+                "-S", //编译为汇编
+                "-masm=intel", //生成intel风格汇编
+                "-finput-charset=UTF-8", //输入编译器文本编码 默认为UTF-8
+                //"-fstack-protector-strong"//启用栈保护
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always", // 在“终端”中显示编译信息的策略，可以为always，silent，never
+                "focus": false,
+                "panel": "shared" // 不同的文件的编译信息共享一个终端面板
+            }
+        }
+    ]
+}

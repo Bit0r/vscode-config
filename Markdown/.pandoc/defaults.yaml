@@ -1,0 +1,44 @@
+# output complete file
+standalone: true
+
+# note that structured variables may be specified:
+variables:
+  lang: zh-CN
+
+# metadata values specified here are parsed as literal
+# string text, not markdown:
+metadata:
+  author:
+  - Bit0r
+
+# adjust conflicts between CSS h* attributes
+shift-heading-level-by: 1
+
+# extract media in docx
+# extract-media: media
+
+# lf, crlf, or native
+eol: lf
+
+# delet all comments and empty paragraphs
+strip-empty-paragraphs: true
+strip-comments: true
+
+# method is plain, webtex, gladtex, mathml, mathjax, katex
+# you may specify a url with webtex, mathjax, katex
+html-math-method:
+  method: katex
+  url: "./katex/"
+
+# encrypt hyperlinks
+# email-obfuscation: references
+
+# either a style name of a style definition file:
+highlight-style: tango
+
+# don't use q tags
+html-q-tags: false
+
+# link css files
+css:
+- ./css/github-pandoc.css

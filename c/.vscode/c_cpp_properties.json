@@ -1,0 +1,21 @@
+{
+    "configurations": [{
+            "name": "MinGW64",
+            "defines": [
+                "_DEBUG",
+                "UNICODE"
+            ],
+            "cStandard": "c11",
+            "compilerPath": "D:/Program Files/mingw64/bin/gcc.exe",
+            "intelliSenseMode": "gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/src"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}
