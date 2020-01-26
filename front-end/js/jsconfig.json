@@ -2,8 +2,9 @@
     "compilerOptions": {
         "strict": true,
         "newLine": "lf",
-        "module": "commonJS",
-        "target": "es6"
+        "module": "es2015",
+        "moduleResolution": "node",
+        "target": "es2017"
     },
     "files": [
         "a.js"

@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "outDir": "../js/", //输出路径
+        "strict": true, //超级严格模式
+        "newLine": "lf", //Unix风格换行
+        "sourceMap": true, //调试信息
+        "extendedDiagnostics": false, //详细的诊断信息
+        "declaration": false, //生成声明文件
+        "removeComments": true, //删除所有注释
+        "module": "ES6", //ES6模块
+        "moduleResolution": "node", //模块解析方式为node
+        "target": "ES2017", //生成ES2017标准的js文件，可使用async/await
+        //设置d.ts的根目录
+        "typeRoots": [
+            "./node_modules/@types/"
+        ],
+        //启用的外部库
+        "types": [
+            "jquery"
+        ]
+    },
+    "files": [
+        "a.ts" //源文件
+    ]
+}

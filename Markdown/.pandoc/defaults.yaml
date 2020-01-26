@@ -28,7 +28,7 @@ strip-comments: true
 # you may specify a url with webtex, mathjax, katex
 html-math-method:
   method: katex
-  url: "./katex/"
+  url: "http://cdn.staticfile.org/KaTeX/0.11.1/"
 
 # encrypt hyperlinks
 # email-obfuscation: references
