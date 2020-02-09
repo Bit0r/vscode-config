@@ -22,5 +22,12 @@
     },
     "files": [
         "a.ts" //源文件
-    ]
+    ],
+    //"include": [
+    //    "**/*.ts"
+    //],
+    //"exclude": [
+    //    "node_modules",
+    //    "**/*.d.ts"
+    //]
 }
