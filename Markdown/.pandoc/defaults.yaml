@@ -28,7 +28,8 @@ strip-comments: true
 # you may specify a url with webtex, mathjax, katex
 html-math-method:
   method: katex
-  url: "http://cdn.staticfile.org/KaTeX/0.11.1/"
+  url:  "http://cdn.staticfile.org/KaTeX/0.11.1/"
+# url: "./katex/"
 
 # encrypt hyperlinks
 # email-obfuscation: references
@@ -41,4 +42,4 @@ html-q-tags: false
 
 # link css files
 css:
-- ./css/github-pandoc.css
+- ./.pandoc/github-pandoc.css
