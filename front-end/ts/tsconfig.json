@@ -1,8 +1,10 @@
 {
     "compilerOptions": {
         "outDir": "../js/", //输出路径
-        "strict": true, //超级严格模式
-        "noImplicitThis": false, //this指针可以为any类型
+        "alwaysStrict": true, //生成严格模式的JS
+        "noImplicitAny": true, //禁止隐式any类型
+        "noUnusedLocals": true, //禁止声明未使用的局部变量  
+        "noUnusedParameters": true, //禁止声明未使用的函数参数
         "newLine": "lf", //Unix风格换行
         "sourceMap": true, //调试信息
         "extendedDiagnostics": false, //详细的诊断信息
@@ -16,12 +18,10 @@
             "./node_modules/@types/"
         ],
         //启用的外部库
-        "types": [
-            "jquery"
-        ]
+        "types": []
     },
     "files": [
-        "a.ts" //源文件
+        "a.ts"
     ],
     //"include": [
     //    "**/*.ts"
