@@ -1,3 +1,4 @@
 {
-    "open-php-html-js-in-browser.documentRootFolder": "D:\\phpstudy_pro\\WWW\\"
+    //"open-php-html-js-in-browser.documentRootFolder": "D:\\phpstudy_pro\\WWW\\"
+    "open-php-html-js-in-browser.documentRootFolder": "/var/www/html/"
 }

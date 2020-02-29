@@ -10,7 +10,7 @@
             "includePath": [
                 "${workspaceFolder}/include/"
             ],
-            "compilerPath": "D:\\Program Files\\mingw64\\bingcc.exe",
+            "compilerPath": "/usr/bin/gcc",
             "intelliSenseMode": "gcc-x64",
             "compileCommands": "${workspaceFolder}/build/compile_commands.json",
             "compilerArgs": [],

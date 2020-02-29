@@ -7,14 +7,19 @@
                 "UNICODE"
             ],
             "cppStandard": "c++20",
-            "compilerPath": "D:/Program Files/mingw64/bin/g++.exe",
+            "compilerPath": "/usr/bin/g++",
             "intelliSenseMode": "gcc-x64",
             "browse": {
                 "path": [
                     "${workspaceFolder}/src"
                 ],
                 "limitSymbolsToIncludedHeaders": true
-            }
+            },
+            "compilerArgs": [
+                "-Wall",
+                "-ggdb3",
+                "-O0"
+            ]
         }
     ],
     "version": 4

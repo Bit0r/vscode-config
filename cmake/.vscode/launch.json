@@ -5,7 +5,7 @@
             "name": "CMake",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/out/${workspaceFolderBasename}.exe",//调试程序的路径根据自己的需要进行替换
+            "program": "${workspaceFolder}/out/${workspaceFolderBasename}", //调试程序的路径根据自己的需要进行替换
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -13,7 +13,7 @@
             "externalConsole": false,
             "internalConsoleOptions": "neverOpen",
             "MIMode": "gdb",
-            "miDebuggerPath": "D:\\Program Files\\mingw64\\bin\\gdb.exe",
+            "miDebuggerPath": "/usr/bin/gdb",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",

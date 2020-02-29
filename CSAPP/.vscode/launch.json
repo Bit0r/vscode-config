@@ -9,33 +9,17 @@
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": true,
-            "internalConsoleOptions": "openOnSessionStart",
-            "windows": {
-                "MIMode": "gdb",
-                "miDebuggerPath": "/usr/bin/gdb",
-                "setupCommands": [
-                    {
-                        "description": "Enable pretty-printing for gdb",
-                        "text": "-enable-pretty-printing",
-                        "ignoreFailures": false
-                    }
-                ]
-            },
-            "pipeTransport": {
-                "pipeCwd": "",
-                "pipeProgram": "bash",
-                "pipeArgs": [
-                    "-c"
-                ],
-                //"debuggerPath": "stdbuf -i0 -o0 -e0 /usr/bin/gdb"//关闭3个通道的缓冲区
-                "debuggerPath": "/usr/bin/gdb"
-            },
-            "sourceFileMap": {
-                "/mnt/c": "${env:systemdrive}/",
-                "/mnt/e/desktop": "E:\\Desktop\\"
-            }
+            "externalConsole": false,
+            "internalConsoleOptions": "neverOpen",
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable GDB pretty-printing",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": false
+                }
+            ]
         }
     ]
 }
