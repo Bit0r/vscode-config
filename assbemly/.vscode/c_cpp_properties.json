@@ -3,7 +3,7 @@
         {
             "name": "MinGW64",
             "intelliSenseMode": "gcc-x64",
-            "compilerPath": "C:/mingw64/bin/gcc.exe",
+            "compilerPath": "/usr/bin/gcc",
             "browse": {
                 "path": [
                     "${workspaceFolder}/src"

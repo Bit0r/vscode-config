@@ -16,7 +16,12 @@
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
-            }
+            },
+            "compilerArgs": [
+                "-Wall",
+                "-ggdb3",
+                "-O0"
+            ]
         }
     ],
     "version": 4
