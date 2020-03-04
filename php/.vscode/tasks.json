@@ -1,0 +1,51 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Sass",
+      "type": "shell",
+      "command": "sassc",
+      "args": [
+        "-t",
+        "expanded", //输出展开格式的CSS文件
+        //"compressed", //输出压缩格式的CSS文件
+        //"-mauto", //生成调试文件
+        "${file}",
+        "${workspaceFolder}/css/${fileBasenameNoExtension}.css"
+      ],
+      "problemMatcher": "$node-sass",
+      "options": {
+        "cwd": "${workspaceFolder}/scss"
+      },
+      "presentation": {
+        "reveal": "silent",
+        "showReuseMessage": false,
+        "clear": true
+      }/* ,
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      } */
+    },
+    {
+      "label": "TS",
+      "type": "typescript",
+      "tsconfig": "ts/tsconfig.json",
+      "problemMatcher": [
+        "$tsc"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/ts"
+      },
+      "presentation": {
+        "reveal": "silent",
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
