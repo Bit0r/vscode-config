@@ -1,10 +1,10 @@
 {
     "compilerOptions": {
         "outDir": "../js/", //输出路径
-        "alwaysStrict": true, //生成严格模式的JS
-        "noImplicitAny": true, //禁止隐式any类型
-        "noUnusedLocals": true, //禁止声明未使用的局部变量  
-        "noUnusedParameters": true, //禁止声明未使用的函数参数
+        "strict": true, //开启所有检查
+        "strictNullChecks": false, //关闭null检查
+        "noUnusedLocals": true, //检查未使用的局部变量
+        "noUnusedParameters": true, //检查未使用的参数
         "newLine": "lf", //Unix风格换行
         "sourceMap": true, //调试信息
         "extendedDiagnostics": false, //详细的诊断信息
@@ -18,10 +18,12 @@
             "./node_modules/@types/"
         ],
         //启用的外部库
-        "types": []
+        "types": [
+            "vue"
+        ]
     },
     "files": [
-        "a.ts"
+        "vue.ts"
     ],
     //"include": [
     //    "**/*.ts"

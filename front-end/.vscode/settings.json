@@ -1,4 +1,3 @@
 {
-    "open-php-html-js-in-browser.urlToOpen": "file:///",
-    "typescript.updateImportsOnFileMove.enabled": "never"
+    "open-php-html-js-in-browser.urlToOpen": "file:///"
 }
