@@ -1,0 +1,12 @@
+{
+    "files.watcherExclude": {
+        "**/*.spec.json": true,
+        "**/*.spec.ts": true,
+        "**/assets/**": true,
+        "**/e2e/**": true,
+        "**/environments/**": true,
+        "**/favicon.ico": true,
+        "**/test.ts": true,
+        "**/tslint.json": true
+    }
+}
