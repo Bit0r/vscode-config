@@ -1,45 +1,51 @@
-# output complete file
-standalone: true
+from: gfm
+# reader: may be used instead of from:
 
-# note that structured variables may be specified:
-variables:
-  lang: zh-CN
 
-# metadata values specified here are parsed as literal
-# string text, not markdown:
-metadata:
-  author:
-  - Bit0r
+## Reader options
 
 # adjust conflicts between CSS h* attributes
-shift-heading-level-by: 1
+# shift-heading-level-by: 1
 
-# extract media in docx
-# extract-media: media
+# delete all empty paragraphs
+strip-empty-paragraphs: true
+
+# Preserve tabs instead of converting them to spaces.
+preserve-tabs: true
+
+
+## General writer options
 
 # lf, crlf, or native
 eol: lf
 
-# delet all comments and empty paragraphs
-strip-empty-paragraphs: true
+# delete all comments
 strip-comments: true
+
+# either a style name of a style definition file:
+highlight-style: haddock
+
+
+## Options affecting specific writers
+
+# Produce a standalone HTML file with no external dependencies
+self-contained: true
+
+# encrypt hyperlinks
+# email-obfuscation: references
+
+# link css files
+css:
+- ../.pandoc/github.css
+
 
 # method is plain, webtex, gladtex, mathml, mathjax, katex
 # you may specify a url with webtex, mathjax, katex
 html-math-method:
   method: katex
-  url:  "http://cdn.staticfile.org/KaTeX/0.11.1/"
-# url: "./katex/"
+  url: "http://cdn.staticfile.org/KaTeX/0.11.1/"
 
-# encrypt hyperlinks
-# email-obfuscation: references
 
-# either a style name of a style definition file:
-highlight-style: tango
-
-# don't use q tags
-html-q-tags: false
-
-# link css files
-css:
-- ./.pandoc/github-pandoc.css
+# note that structured variables may be specified:
+variables:
+  lang: zh-Hans
