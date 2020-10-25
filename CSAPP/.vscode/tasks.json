@@ -14,7 +14,7 @@
                 "-O0",
                 "-ggdb3",
                 "-Wall",
-                "-std=gnu11",
+                "-std=gnu18",
                 "-lpthread", //Linux多线程库
             ],
             "presentation": {

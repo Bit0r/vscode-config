@@ -6,12 +6,12 @@
                 "_DEBUG",
                 "UNICODE"
             ],
-            "cStandard": "c11",
+            "cStandard": "c18",
             "compilerPath": "/usr/bin/gcc",
             "intelliSenseMode": "gcc-x64",
             "browse": {
                 "path": [
-                    "${workspaceFolder}/src"
+                    "${workspaceFolder}/src/"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""

@@ -8,12 +8,12 @@
             "args": [
                 "${file}", // 指定编译源代码文件
                 "-o",
-                "${workspaceFolder}/out/${fileBasenameNoExtension}", // 指定输出文件名
+                "${workspaceFolder}/bin/${fileBasenameNoExtension}", // 指定输出文件名
                 "-O0", // 优化级别
                 "-ggdb3", // 生成和调试有关的信息
                 "-Wall", // 开启额外警告
-                "-std=c11", // 使用c11标准
-                //"-Wno-format",
+                "-std=c18", // 使用c18标准
+                // "-Wno-format",
                 //"-finput-charset=UTF-8", //输入编译器文本编码 默认为UTF-8
                 //"-fexec-charset=GB18030", //输出的二进制文件的文本编码 Win平台默认为GB18030
                 //"-D _USE_MATH_DEFINES"
