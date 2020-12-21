@@ -6,20 +6,16 @@
                 "_DEBUG",
                 "UNICODE"
             ],
-            "cStandard": "c17",
             "compilerPath": "/usr/bin/gcc",
-            "intelliSenseMode": "gcc-x64",
+            "includePath": [
+                "${workspaceFolder}/src/"
+            ],
             "browse": {
                 "path": [
-                    "${workspaceFolder}/src/"
+                    "${workspaceFolder}/src/*"
                 ],
                 "limitSymbolsToIncludedHeaders": true
-            },
-            "compilerArgs": [
-                "-Wall",
-                "-ggdb3",
-                "-O0"
-            ]
+            }
         }
     ],
     "version": 4
