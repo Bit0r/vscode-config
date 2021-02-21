@@ -1,17 +1,8 @@
 {
     "configurations": [
         {
-            "name": "MinGW64",
-            "intelliSenseMode": "gcc-x64",
-            "compilerPath": "/usr/bin/gcc",
-            "browse": {
-                "path": [
-                    "${workspaceFolder}/src"
-                ],
-                "limitSymbolsToIncludedHeaders": true,
-                "databaseFilename": ""
-            },
-            "cStandard": "c11"
+            "name": "Linux",
+            "compilerPath": "/usr/bin/gcc"
         }
     ],
     "version": 4

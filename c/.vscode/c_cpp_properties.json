@@ -2,20 +2,7 @@
     "configurations": [
         {
             "name": "Linux",
-            "defines": [
-                "_DEBUG",
-                "UNICODE"
-            ],
-            "compilerPath": "/usr/bin/gcc",
-            "includePath": [
-                "${workspaceFolder}/src/"
-            ],
-            "browse": {
-                "path": [
-                    "${workspaceFolder}/src/*"
-                ],
-                "limitSymbolsToIncludedHeaders": true
-            }
+            "compilerPath": "/usr/bin/gcc"
         }
     ],
     "version": 4
