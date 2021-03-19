@@ -14,8 +14,11 @@
                 "-Wextra", // 额外的警告
                 "-pedantic", // 严格的ISO C标准，不使用GNU拓展
                 "-std=c17", // 使用c17标准
-                "-fno-common" // 禁止全局符号冲突
-                //"-Wno-format",
+                "-fno-common", // 禁止全局符号冲突
+                "-fsanitize=address", // 检查动态内存分配引发的错误
+                "-fsanitize=undefined", // 检查UB行为
+                "-fsanitize=leak", //检查内存泄漏
+                //"-fsanitize=thread", // 检查数据竞争
                 //"-finput-charset=UTF-8", //输入编译器文本编码 默认为UTF-8
                 //"-fexec-charset=GB18030", //输出的二进制文件的文本编码 Win平台默认为GB18030
             ],
