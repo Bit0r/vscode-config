@@ -14,7 +14,8 @@
                 "-Wextra", // 额外的警告
                 //"-Wpadded", // 结构体自动填充时发出警告
                 "-pedantic", // 严格的ISO C标准，不使用GNU拓展
-                "-std=c2x", // 使用c23标准
+                //"-std=c2x", // 使用c23标准
+                //"-std=c++20", // 使用c++20标准
                 "-fno-common", // 禁止全局符号冲突
                 //"-pthread", // 链接多线程库
                 "-fsanitize=address", // 检查动态内存分配引发的错误
