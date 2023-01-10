@@ -1,0 +1,171 @@
+{
+	// proxy
+	//"http.proxy": "http://localhost:8800",
+	//"http.proxySupport": "on",
+	// explorer
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"workbench.iconTheme": "vscode-icons",
+	// update
+	"update.mode": "manual",
+	"update.showReleaseNotes": false,
+	"workbench.enableExperiments": false,
+	// window
+	"window.zoomLevel": 1.25,
+	"window.titleBarStyle": "custom",
+	// editor
+	"editor.fontSize": 24,
+	"editor.fontLigatures": true,
+	"editor.fontFamily": "Fira Code Light, Fira Code, Noto Sans Mono CJK SC",
+	"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": true
+	},
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter-notebook"
+	},
+	"workbench.localHistory.enabled": false,
+	//"workbench.editor.historyBasedLanguageDetection": false,
+	// Copilot
+	"editor.inlineSuggest.enabled": true,
+	"github.copilot.enable": {
+		"*": true,
+		"yaml": true,
+		"plaintext": true,
+		"markdown": true
+	},
+	// terminal
+	"debug.console.fontFamily": "Fira Code, Noto Sans Mono CJK SC",
+	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.allowChords": false,
+	"terminal.integrated.sendKeybindingsToShell": true,
+	"terminal.integrated.inheritEnv": false,
+	"terminal.integrated.enablePersistentSessions": false,
+	"terminal.integrated.persistentSessionReviveProcess": "never",
+	"terminal.integrated.shellIntegration.decorationsEnabled": "never",
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"terminal.integrated.localEchoExcludePrograms": [
+		"vim",
+		"vi",
+		"nano",
+		"tmux",
+		"micro"
+	],
+	// format
+	"files.eol": "\n",
+	"editor.insertSpaces": false,
+	"editor.formatOnSave": true,
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	// search
+	"search.exclude": {
+		"**/.vscode/": true,
+		"**/tsconfig*": true
+	},
+	// watcher
+	"files.watcherExclude": {
+		"**/composer.lock": true,
+		"**/dist/**": true,
+		"**/pnpm-lock.yaml": true,
+		"**/polyfill*": true,
+		"**/vendor/**": true,
+		"**/yarn.lock": true,
+		"**/*.class": true
+	},
+	// Git
+	"git.enableSmartCommit": true,
+	// CodeSnap
+	"codesnap.showWindowControls": false,
+	"codesnap.target": "window",
+	// rsync
+	"sync-rsync.onSaveIndividual": true,
+	"sync-rsync.exclude": [
+		".git",
+		".vscode",
+		".svn"
+	],
+	// C
+	"C_Cpp.clang_format_path": "/usr/bin/clang-format",
+	"cmake.configureOnOpen": false,
+	"cmake.enabledOutputParsers": [
+		"cmake",
+		"gcc",
+		"gnuld"
+	],
+	// HTML/CSS/SCSS
+	"open-php-html-js-in-browser.selectedBrowser": "Chrome",
+	"css.lint.duplicateProperties": "warning",
+	"css.lint.ieHack": "warning",
+	"css.lint.importStatement": "warning",
+	"css.lint.unknownVendorSpecificProperties": "warning",
+	"scss.lint.duplicateProperties": "warning",
+	"scss.lint.ieHack": "warning",
+	"scss.lint.unknownVendorSpecificProperties": "warning",
+	// Markdown
+	"markdown-toc.detectAndAutoSetSection": false,
+	"markdown-toc.updateOnSave": false,
+	"pandoc.docxOptString": "-d pandoc",
+	"pandoc.htmlOptString": "-d pandoc",
+	// yaml
+	"redhat.telemetry.enabled": true,
+	// PHP
+	"intelephense.stubs": [
+		"Core",
+		"ctype",
+		"curl",
+		"date",
+		"hash",
+		"imagick",
+		"imap",
+		"intl",
+		"json",
+		"mbstring",
+		"meta",
+		"openssl",
+		"pcre",
+		"PDO",
+		"pdo_mysql",
+		"Reflection",
+		"session",
+		"SPL",
+		"standard",
+		"superglobals",
+		"Zend OPcache"
+	],
+	// Python
+	"python.formatting.provider": "yapf",
+	"python.formatting.yapfPath": "/usr/bin/yapf3",
+	"python.linting.enabled": true,
+	"python.linting.flake8Enabled": true,
+	"python.linting.pylintEnabled": false,
+	"python.linting.flake8Path": "ruff",
+	"python.analysis.autoImportCompletions": true,
+	"jupyter.widgetScriptSources": [
+		"jsdelivr.com",
+		"unpkg.com"
+	],
+	"autoDocstring.docstringFormat": "numpy",
+	"autoDocstring.startOnNewLine": true,
+	// Java
+	"boot-java.rewrite.reconcile": true,
+	"java.compile.nullAnalysis.mode": "automatic",
+	"java.sources.organizeImports.starThreshold": 5,
+	"java.sources.organizeImports.staticStarThreshold": 3,
+	"java.inlayHints.parameterNames.enabled": "none",
+	"java.configuration.runtimes": [
+		{
+			"name": "JavaSE-1.8",
+			"path": "/usr/lib/jvm/java-1.8.0-openjdk-amd64"
+		},
+		{
+			"name": "JavaSE-11",
+			"path": "/usr/lib/jvm/java-11-openjdk-amd64"
+		},
+		{
+			"name": "JavaSE-17",
+			"path": "/usr/lib/jvm/java-17-openjdk-amd64",
+			"default": true
+		}
+	]
+}
