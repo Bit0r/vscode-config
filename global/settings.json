@@ -1,22 +1,26 @@
 {
-	// proxy
 	//"http.proxy": "http://localhost:8800",
 	//"http.proxySupport": "on",
 	// explorer
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
 	"workbench.iconTheme": "vscode-icons",
+	"window.titleBarStyle": "custom",
+	// Outline Map
+	"editor.minimap.enabled": false,
+	"outline-map.follow": "viewport",
 	// update
 	"update.mode": "manual",
 	"update.showReleaseNotes": false,
 	"workbench.enableExperiments": false,
-	// window
-	"window.zoomLevel": 1.25,
-	"window.titleBarStyle": "custom",
 	// editor
-	"editor.fontSize": 24,
+	"window.zoomLevel": 0.8,
+	"editor.fontSize": 26,
 	"editor.fontLigatures": true,
 	"editor.fontFamily": "Fira Code Light, Fira Code, Noto Sans Mono CJK SC",
+	"editor.renderWhitespace": "none",
+	"editor.renderControlCharacters": false,
+	"editor.inlineSuggest.showToolbar": "always",
 	"editor.suggest.snippetsPreventQuickSuggestions": false,
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": true
@@ -102,6 +106,8 @@
 	"scss.lint.duplicateProperties": "warning",
 	"scss.lint.ieHack": "warning",
 	"scss.lint.unknownVendorSpecificProperties": "warning",
+	// JavaScript/Typescript
+	"svelte.enable-ts-plugin": true,
 	// Markdown
 	"markdown-toc.detectAndAutoSetSection": false,
 	"markdown-toc.updateOnSave": false,
@@ -141,6 +147,7 @@
 	"python.linting.pylintEnabled": false,
 	"python.linting.flake8Path": "ruff",
 	"python.analysis.autoImportCompletions": true,
+	"jupyter.pythonExportMethod": "commentMagics",
 	"jupyter.widgetScriptSources": [
 		"jsdelivr.com",
 		"unpkg.com"
@@ -150,8 +157,9 @@
 	// Java
 	"boot-java.rewrite.reconcile": true,
 	"java.compile.nullAnalysis.mode": "automatic",
-	"java.sources.organizeImports.starThreshold": 5,
-	"java.sources.organizeImports.staticStarThreshold": 3,
+	"java.format.comments.enabled": false,
+	"java.sources.organizeImports.starThreshold": 8,
+	"java.sources.organizeImports.staticStarThreshold": 4,
 	"java.inlayHints.parameterNames.enabled": "none",
 	"java.configuration.runtimes": [
 		{
@@ -167,5 +175,12 @@
 			"path": "/usr/lib/jvm/java-17-openjdk-amd64",
 			"default": true
 		}
-	]
+	],
+	// Spring
+	"spring.initializr.serviceUrl": [
+		"https://start.spring.io",
+		"https://start.springboot.io"
+	],
+	"spring.dashboard.enableGutter": "off",
+	"spring.dashboard.openWith": "external"
 }
