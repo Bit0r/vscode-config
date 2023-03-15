@@ -8,6 +8,7 @@ darkriszty.markdown-table-prettify
 dberezin.lox-language
 deitry.apt-source-list-syntax
 donjayamanne.githistory
+foam.foam-vscode
 Gerrnperl.outline-map
 GitHub.copilot
 GitHub.copilot-labs
@@ -15,6 +16,7 @@ golang.go
 hangxingliu.vscode-systemd-support
 hellorusk.markdown-table-maker
 maixiaojie.git-emoji-zh
+MarcosGutirrezAlonso.turing-machine
 ms-azuretools.vscode-docker
 MS-CEINTL.vscode-language-pack-zh-hans
 ms-python.python

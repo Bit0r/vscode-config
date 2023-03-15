@@ -109,10 +109,12 @@
 	// JavaScript/Typescript
 	"svelte.enable-ts-plugin": true,
 	// Markdown
+	"markdown.preview.fontSize": 24,
 	"markdown-toc.detectAndAutoSetSection": false,
 	"markdown-toc.updateOnSave": false,
 	"pandoc.docxOptString": "-d pandoc",
 	"pandoc.htmlOptString": "-d pandoc",
+	"pandoc.render.openViewer": false,
 	// yaml
 	"redhat.telemetry.enabled": true,
 	// PHP
@@ -147,7 +149,12 @@
 	"python.linting.pylintEnabled": false,
 	"python.linting.flake8Path": "ruff",
 	"python.analysis.autoImportCompletions": true,
+	"[python]": {
+		"editor.formatOnType": true
+	},
+	"notebook.kernelPicker.type": "all",
 	"jupyter.pythonExportMethod": "commentMagics",
+	"jupyter.disableJupyterAutoStart": true,
 	"jupyter.widgetScriptSources": [
 		"jsdelivr.com",
 		"unpkg.com"
@@ -176,11 +183,11 @@
 			"default": true
 		}
 	],
-	// Spring
+	"spring.dashboard.enableGutter": "off",
+	"spring.dashboard.openWith": "external",
 	"spring.initializr.serviceUrl": [
 		"https://start.spring.io",
 		"https://start.springboot.io"
 	],
-	"spring.dashboard.enableGutter": "off",
-	"spring.dashboard.openWith": "external"
+	"jupyter.experiments.enabled": false
 }
