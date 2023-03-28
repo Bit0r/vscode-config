@@ -79,6 +79,7 @@
 	},
 	// Git
 	"git.enableSmartCommit": true,
+	"scm.diffDecorationsIgnoreTrimWhitespace": "inherit",
 	// CodeSnap
 	"codesnap.showWindowControls": false,
 	"codesnap.target": "window",
