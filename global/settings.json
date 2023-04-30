@@ -4,8 +4,10 @@
 	// explorer
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
-	"workbench.iconTheme": "vscode-icons",
 	"window.titleBarStyle": "custom",
+	"vsicons.dontShowNewVersionMessage": true,
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.quickOpen.closeOnFocusLost": false,
 	// Outline Map
 	"editor.minimap.enabled": false,
 	"outline-map.follow": "viewport",
@@ -85,11 +87,21 @@
 	"codesnap.target": "window",
 	// rsync
 	"sync-rsync.onSaveIndividual": true,
+	//"sync-rsync.shell": "sshpass -f ~/.ssh/vm.pass ssh vm",
 	"sync-rsync.exclude": [
 		".git",
 		".vscode",
 		".svn"
 	],
+	// Remote
+	//"remote.SSH.showLoginTerminal": true,
+	"remote.SSH.remoteServerListenOnSocket": true,
+	//"remote.SSH.useLocalServer": false,
+	"remote.SSH.remotePlatform": {
+		"zw403-old": "linux",
+		"yjj-3090ti": "linux",
+		"zw403-1080ti": "linux"
+	},
 	// C
 	"C_Cpp.clang_format_path": "/usr/bin/clang-format",
 	"cmake.configureOnOpen": false,
@@ -115,7 +127,10 @@
 	"markdown-toc.updateOnSave": false,
 	"pandoc.docxOptString": "-d pandoc",
 	"pandoc.htmlOptString": "-d pandoc",
+	"pandoc.pdfOptString": "-d pandoc",
 	"pandoc.render.openViewer": false,
+	// Typst
+	"typst-lsp.exportPdf": "never",
 	// yaml
 	"redhat.telemetry.enabled": true,
 	// PHP
@@ -153,9 +168,8 @@
 	"[python]": {
 		"editor.formatOnType": true
 	},
-	"notebook.kernelPicker.type": "all",
 	"jupyter.pythonExportMethod": "commentMagics",
-	"jupyter.disableJupyterAutoStart": true,
+	"jupyter.allowUnauthorizedRemoteConnection": true,
 	"jupyter.widgetScriptSources": [
 		"jsdelivr.com",
 		"unpkg.com"
@@ -189,6 +203,5 @@
 	"spring.initializr.serviceUrl": [
 		"https://start.spring.io",
 		"https://start.springboot.io"
-	],
-	"jupyter.experiments.enabled": false
+	]
 }
