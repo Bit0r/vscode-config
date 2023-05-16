@@ -4,6 +4,8 @@
 	// explorer
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
+	"window.customMenuBarAltFocus": false,
+	"window.enableMenuBarMnemonics": false,
 	"window.titleBarStyle": "custom",
 	"vsicons.dontShowNewVersionMessage": true,
 	"workbench.iconTheme": "vscode-icons",
@@ -168,6 +170,7 @@
 	"[python]": {
 		"editor.formatOnType": true
 	},
+	"jupyter.disableJupyterAutoStart": false,
 	"jupyter.pythonExportMethod": "commentMagics",
 	"jupyter.allowUnauthorizedRemoteConnection": true,
 	"jupyter.widgetScriptSources": [

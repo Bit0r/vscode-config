@@ -17,9 +17,9 @@ GitHub.copilot-labs
 golang.go
 hangxingliu.vscode-systemd-support
 hellorusk.markdown-table-maker
+HuggingFace.huggingface-vscode
 maixiaojie.git-emoji-zh
 MarcosGutirrezAlonso.turing-machine
-markruler.mdm
 ms-azuretools.vscode-docker
 MS-CEINTL.vscode-language-pack-zh-hans
 ms-python.python
@@ -46,6 +46,8 @@ redhat.vscode-yaml
 surajbarkale.ninja
 svelte.svelte-vscode
 tamasfe.even-better-toml
+Terrastruct.d2
+tomoki1207.pdf
 trentrand.git-rebase-shortcuts
 vmware.vscode-spring-boot
 vscjava.vscode-java-debug
@@ -57,3 +59,4 @@ vscode-ext.sync-rsync
 vscode-icons-team.vscode-icons
 Vue.volar
 WhenSunset.chatgpt-china
+yinfei.luahelper
