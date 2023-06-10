@@ -9,6 +9,7 @@
 	"window.titleBarStyle": "custom",
 	"vsicons.dontShowNewVersionMessage": true,
 	"workbench.iconTheme": "vscode-icons",
+	"workbench.colorTheme": "Default Dark+",
 	"workbench.quickOpen.closeOnFocusLost": false,
 	// Outline Map
 	"editor.minimap.enabled": false,
@@ -22,13 +23,16 @@
 	"editor.fontSize": 26,
 	"editor.fontLigatures": true,
 	"editor.fontFamily": "Fira Code Light, Fira Code, Noto Sans Mono CJK SC",
-	"editor.renderWhitespace": "none",
+	"editor.renderWhitespace": "boundary",
 	"editor.renderControlCharacters": false,
 	"editor.inlineSuggest.showToolbar": "always",
 	"editor.suggest.snippetsPreventQuickSuggestions": false,
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": true
 	},
+	"workbench.editor.enablePreview": false,
+	"workbench.editor.tabSizing": "shrink",
+	"workbench.editor.wrapTabs": true,
 	"workbench.editorAssociations": {
 		"*.ipynb": "jupyter-notebook"
 	},
@@ -50,7 +54,7 @@
 	"terminal.integrated.inheritEnv": false,
 	"terminal.integrated.enablePersistentSessions": false,
 	"terminal.integrated.persistentSessionReviveProcess": "never",
-	"terminal.integrated.shellIntegration.decorationsEnabled": "never",
+	"terminal.integrated.shellIntegration.decorationsEnabled": "both",
 	"terminal.integrated.enableMultiLinePasteWarning": false,
 	"terminal.integrated.localEchoExcludePrograms": [
 		"vim",
@@ -113,7 +117,8 @@
 		"gnuld"
 	],
 	// HTML/CSS/SCSS
-	"open-php-html-js-in-browser.selectedBrowser": "Chrome",
+	"open-php-html-js-in-browser.customBrowserPath": "/usr/bin/vivaldi",
+	"open-php-html-js-in-browser.selectedBrowser": "Custom...",
 	"css.lint.duplicateProperties": "warning",
 	"css.lint.ieHack": "warning",
 	"css.lint.importStatement": "warning",

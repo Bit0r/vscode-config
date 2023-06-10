@@ -43,6 +43,7 @@ PrimaFuture.open-php-html-js-in-browser
 redhat.java
 redhat.vscode-xml
 redhat.vscode-yaml
+sandcastle.vscode-open
 surajbarkale.ninja
 svelte.svelte-vscode
 tamasfe.even-better-toml
@@ -58,5 +59,4 @@ vscjava.vscode-spring-initializr
 vscode-ext.sync-rsync
 vscode-icons-team.vscode-icons
 Vue.volar
-WhenSunset.chatgpt-china
 yinfei.luahelper
