@@ -37,7 +37,6 @@
 		"*.ipynb": "jupyter-notebook"
 	},
 	"workbench.localHistory.enabled": false,
-	//"workbench.editor.historyBasedLanguageDetection": false,
 	// Copilot
 	"editor.inlineSuggest.enabled": true,
 	"github.copilot.enable": {
@@ -70,6 +69,8 @@
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
 	"files.trimTrailingWhitespace": true,
+	//"notebook.formatOnSave.enabled": true,
+	"notebook.formatOnCellExecution": true,
 	// search
 	"search.exclude": {
 		"**/.vscode/": true,
@@ -136,6 +137,7 @@
 	"pandoc.htmlOptString": "-d pandoc",
 	"pandoc.pdfOptString": "-d pandoc",
 	"pandoc.render.openViewer": false,
+	"pandoc.useDocker": false,
 	// Typst
 	"typst-lsp.exportPdf": "never",
 	// yaml
@@ -171,9 +173,10 @@
 	"python.linting.flake8Enabled": true,
 	"python.linting.pylintEnabled": false,
 	"python.linting.flake8Path": "ruff",
+	"python.analysis.typeCheckingMode": "off",
 	"python.analysis.autoImportCompletions": true,
 	"[python]": {
-		"editor.formatOnType": true
+		"editor.formatOnType": false
 	},
 	"jupyter.disableJupyterAutoStart": false,
 	"jupyter.pythonExportMethod": "commentMagics",

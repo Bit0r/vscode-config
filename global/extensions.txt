@@ -11,17 +11,17 @@ deitry.apt-source-list-syntax
 donjayamanne.githistory
 foam.foam-vscode
 Gerrnperl.outline-map
-Gimly81.matlab
 GitHub.copilot
 GitHub.copilot-labs
 golang.go
 hangxingliu.vscode-systemd-support
 hellorusk.markdown-table-maker
 HuggingFace.huggingface-vscode
+Jannchie.codetime
 maixiaojie.git-emoji-zh
-MarcosGutirrezAlonso.turing-machine
 ms-azuretools.vscode-docker
 MS-CEINTL.vscode-language-pack-zh-hans
+ms-iot.vscode-ros
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
@@ -29,6 +29,7 @@ ms-toolsai.jupyter-keymap
 ms-toolsai.jupyter-renderers
 ms-toolsai.vscode-jupyter-cell-tags
 ms-toolsai.vscode-jupyter-slideshow
+ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
 ms-vscode.cpptools
@@ -44,7 +45,6 @@ redhat.java
 redhat.vscode-xml
 redhat.vscode-yaml
 sandcastle.vscode-open
-surajbarkale.ninja
 svelte.svelte-vscode
 tamasfe.even-better-toml
 Terrastruct.d2
