@@ -12,8 +12,11 @@ donjayamanne.githistory
 foam.foam-vscode
 Gerrnperl.outline-map
 GitHub.copilot
+GitHub.copilot-chat
 GitHub.copilot-labs
+github.vscode-github-actions
 golang.go
+GrapeCity.gc-excelviewer
 hangxingliu.vscode-systemd-support
 hellorusk.markdown-table-maker
 HuggingFace.huggingface-vscode
@@ -44,6 +47,7 @@ PrimaFuture.open-php-html-js-in-browser
 redhat.java
 redhat.vscode-xml
 redhat.vscode-yaml
+rust-lang.rust-analyzer
 sandcastle.vscode-open
 svelte.svelte-vscode
 tamasfe.even-better-toml

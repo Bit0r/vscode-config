@@ -101,13 +101,15 @@
 		".svn"
 	],
 	// Remote
+	"remote.SSH.lockfilesInTmp": true,
 	//"remote.SSH.showLoginTerminal": true,
-	"remote.SSH.remoteServerListenOnSocket": true,
 	//"remote.SSH.useLocalServer": false,
+	"remote.SSH.remoteServerListenOnSocket": true,
+	"remote.SSH.enableX11Forwarding": false,
+	"remote.SSH.localServerDownload": "always",
 	"remote.SSH.remotePlatform": {
-		"zw403-old": "linux",
-		"yjj-3090ti": "linux",
-		"zw403-1080ti": "linux"
+		"zw403-1080ti": "linux",
+		"autodl-a4000": "linux"
 	},
 	// C
 	"C_Cpp.clang_format_path": "/usr/bin/clang-format",
@@ -117,6 +119,8 @@
 		"gcc",
 		"gnuld"
 	],
+	// CMake
+	"cmake.languageSupport.dotnetPath": "dotnet",
 	// HTML/CSS/SCSS
 	"open-php-html-js-in-browser.customBrowserPath": "/usr/bin/vivaldi",
 	"open-php-html-js-in-browser.selectedBrowser": "Custom...",
@@ -129,6 +133,9 @@
 	"scss.lint.unknownVendorSpecificProperties": "warning",
 	// JavaScript/Typescript
 	"svelte.enable-ts-plugin": true,
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
 	// Markdown
 	"markdown.preview.fontSize": 24,
 	"markdown-toc.detectAndAutoSetSection": false,
@@ -142,6 +149,12 @@
 	"typst-lsp.exportPdf": "never",
 	// yaml
 	"redhat.telemetry.enabled": true,
+	"[yaml]": {
+		"editor.insertSpaces": true
+	},
+	"[github-actions-workflow]": {
+		"editor.insertSpaces": true
+	},
 	// PHP
 	"intelephense.stubs": [
 		"Core",
@@ -167,17 +180,15 @@
 		"Zend OPcache"
 	],
 	// Python
-	"python.formatting.provider": "yapf",
-	"python.formatting.yapfPath": "/usr/bin/yapf3",
+	"python.formatting.provider": "black",
+	"python.formatting.blackPath": "/usr/local/bin/black",
 	"python.linting.enabled": true,
-	"python.linting.flake8Enabled": true,
 	"python.linting.pylintEnabled": false,
-	"python.linting.flake8Path": "ruff",
+	"python.linting.flake8Enabled": true,
+	"python.linting.flake8Path": "/usr/local/bin/ruff",
 	"python.analysis.typeCheckingMode": "off",
 	"python.analysis.autoImportCompletions": true,
-	"[python]": {
-		"editor.formatOnType": false
-	},
+	"notebook.output.scrolling": true,
 	"jupyter.disableJupyterAutoStart": false,
 	"jupyter.pythonExportMethod": "commentMagics",
 	"jupyter.allowUnauthorizedRemoteConnection": true,
@@ -185,8 +196,17 @@
 		"jsdelivr.com",
 		"unpkg.com"
 	],
+	"[python]": {
+		"editor.insertSpaces": true,
+	},
 	"autoDocstring.docstringFormat": "numpy",
 	"autoDocstring.startOnNewLine": true,
+	// Rust
+	"rust-analyzer.server.path": "/usr/local/bin/rust-analyzer",
+	"rust-analyzer.inlayHints.typeHints.enable": false,
+	"rust-analyzer.inlayHints.closingBraceHints.enable": false,
+	"rust-analyzer.inlayHints.chainingHints.enable": false,
+	"rust-analyzer.inlayHints.parameterHints.enable": false,
 	// Java
 	"boot-java.rewrite.reconcile": true,
 	"java.compile.nullAnalysis.mode": "automatic",
@@ -214,5 +234,6 @@
 	"spring.initializr.serviceUrl": [
 		"https://start.spring.io",
 		"https://start.springboot.io"
-	]
+	],
+	"jupyter.interactiveWindow.creationMode": "perFile"
 }

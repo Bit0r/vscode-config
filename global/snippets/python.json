@@ -1,0 +1,57 @@
+{
+	"Data Science Libraries": {
+		"prefix": "import_base",
+		"body": [
+			"import functools",
+			"from pathlib import Path",
+			"",
+			"import orjson",
+			"import snoop",
+			"import numpy as np",
+			"import einops as ein",
+			"import xarray as xr",
+			"import pandas as pd",
+			"import polars as pl",
+			"from plotnine import *"
+		],
+		"description": "Import Basic Data Science Libraries"
+	},
+	"Jax": {
+		"prefix": "import_jax",
+		"body": [
+			"import jax",
+			"from jax import nn as jnn",
+			"from jax import numpy as jnp",
+			"from jax import random as jrandom",
+			"from jax import lax, vmap, pmap",
+			"from jaxtyping import *",
+			"import equinox as eqx",
+			"from equinox import nn",
+			"import optax",
+			"from torch.utils.data import DataLoader, Dataset",
+			"from torch.utils.tensorboard import SummaryWriter"
+		],
+		"description": "Import Jax Libraries"
+	},
+	"Pytorch": {
+		"prefix": "import_pytorch",
+		"body": [
+			"import torch",
+			"from torch import nn",
+			"from torch.nn import functional as F",
+			"from torch import optim",
+			"from torch.utils.data import DataLoader, Dataset",
+			"from torch.utils.tensorboard import SummaryWriter",
+			"from torchvision import datasets, transforms",
+			"from torchvision.utils import make_grid"
+		]
+	},
+	"Hugging Face": {
+		"prefix": "import_huggingface",
+		"body": [
+			"from transformers import pipeline, AutoTokenizer, AutoModel, TrainingArguments, Trainer",
+			"from datasets import load_dataset",
+			"from accelerate import Accelerator"
+		]
+	}
+}
