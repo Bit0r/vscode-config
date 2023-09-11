@@ -54,6 +54,7 @@ tamasfe.even-better-toml
 Terrastruct.d2
 tomoki1207.pdf
 trentrand.git-rebase-shortcuts
+Tyriar.sort-lines
 vmware.vscode-spring-boot
 vscjava.vscode-java-debug
 vscjava.vscode-java-test

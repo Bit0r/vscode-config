@@ -103,13 +103,16 @@
 	// Remote
 	"remote.SSH.lockfilesInTmp": true,
 	//"remote.SSH.showLoginTerminal": true,
-	//"remote.SSH.useLocalServer": false,
-	"remote.SSH.remoteServerListenOnSocket": true,
+	"remote.SSH.useLocalServer": false,
+	//"remote.SSH.remoteServerListenOnSocket": true, // 打开此项可以提高安全性，但是可能会导致autodl连接失败
 	"remote.SSH.enableX11Forwarding": false,
 	"remote.SSH.localServerDownload": "always",
 	"remote.SSH.remotePlatform": {
 		"zw403-1080ti": "linux",
-		"autodl-a4000": "linux"
+		"autodl": "linux",
+		"autodl-a4000": "linux",
+		"autodl-a5000": "linux",
+		"autodl-a40": "linux"
 	},
 	// C
 	"C_Cpp.clang_format_path": "/usr/bin/clang-format",
@@ -131,11 +134,27 @@
 	"scss.lint.duplicateProperties": "warning",
 	"scss.lint.ieHack": "warning",
 	"scss.lint.unknownVendorSpecificProperties": "warning",
+	"emmet.variables": {
+		"lang": "zh-CN"
+	},
+	"emmet.extensionsPath": [
+		"./.vscode/emmet/"
+	],
+	"emmet.includeLanguages": {
+		"svelte": "html"
+	},
 	// JavaScript/Typescript
 	"svelte.enable-ts-plugin": true,
+	"javascript.suggest.autoImports": false,
+	"typescript.suggest.autoImports": false,
 	"[javascript]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
+	// Svete
+	"svelte.plugin.css.completions.emmet": false,
+	"svelte.plugin.html.completions.emmet": false,
+	"svelte.plugin.svelte.format.config.singleQuote": true,
+	"svelte.plugin.svelte.format.config.svelteAllowShorthand": false,
 	// Markdown
 	"markdown.preview.fontSize": 24,
 	"markdown-toc.detectAndAutoSetSection": false,
@@ -187,7 +206,7 @@
 	"python.linting.flake8Enabled": true,
 	"python.linting.flake8Path": "/usr/local/bin/ruff",
 	"python.analysis.typeCheckingMode": "off",
-	"python.analysis.autoImportCompletions": true,
+	"python.analysis.autoImportCompletions": false,
 	"notebook.output.scrolling": true,
 	"jupyter.disableJupyterAutoStart": false,
 	"jupyter.pythonExportMethod": "commentMagics",
@@ -234,6 +253,5 @@
 	"spring.initializr.serviceUrl": [
 		"https://start.spring.io",
 		"https://start.springboot.io"
-	],
-	"jupyter.interactiveWindow.creationMode": "perFile"
+	]
 }

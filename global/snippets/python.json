@@ -4,9 +4,11 @@
 		"body": [
 			"import functools",
 			"from pathlib import Path",
+			"from pprint import pprint",
 			"",
 			"import orjson",
 			"import snoop",
+			"from rich.progress import track",
 			"import numpy as np",
 			"import einops as ein",
 			"import xarray as xr",
@@ -49,9 +51,10 @@
 	"Hugging Face": {
 		"prefix": "import_huggingface",
 		"body": [
-			"from transformers import pipeline, AutoTokenizer, AutoModel, TrainingArguments, Trainer",
+			"from transformers import pipeline, get_scheduler, AutoTokenizer, AutoModel, DataCollatorWithPadding, TrainingArguments, Trainer",
 			"from datasets import load_dataset",
-			"from accelerate import Accelerator"
+			"from accelerate import Accelerator",
+			"from evaluate import load as eval_load"
 		]
 	}
 }
