@@ -1,15 +1,70 @@
 {
 	//"http.proxy": "http://localhost:8800",
 	//"http.proxySupport": "on",
+	// theme
+	"workbench.colorTheme": "Default Light Modern",
+	"workbench.colorCustomizations": {
+		// Flexoki-Light
+		"editor.background": "#FFFCF0",
+		"editorSuggestWidget.selectedBackground": "#B7B5AC",
+		"editorWidget.background": "#DAD8CE",
+		"sideBar.background": "#F2F0E5",
+		"sideBarSectionHeader.background": "#F2F0E5",
+		"badge.background": "#205EA6",
+		"list.activeSelectionBackground": "#B7B5AC",
+		"list.focusBackground": "#E6E4D9",
+		"list.hoverBackground": "#DAD8CE",
+		"list.inactiveSelectionBackground": "#E6E4D9",
+		"titleBar.activeBackground": "#F2F0E5",
+		"activityBar.background": "#F2F0E5",
+		"activityBarBadge.background": "#205EA6",
+		"editorGroupHeader.tabsBackground": "#F2F0E5",
+		"tab.inactiveBackground": "#F2F0E5",
+		"terminal.ansiBlack": "#FFFCF0",
+		"terminal.ansiBlue": "#205EA6",
+		"terminal.ansiBrightBlack": "#DAD8CE",
+		"terminal.ansiBrightBlue": "#205EA6",
+		"terminal.ansiBrightCyan": "#24837B",
+		"terminal.ansiBrightGreen": "#66800B",
+		"terminal.ansiBrightMagenta": "#A02F6F",
+		"terminal.ansiBrightRed": "#AF3029",
+		"terminal.ansiBrightWhite": "#100F0F",
+		"terminal.ansiBrightYellow": "#AD8301",
+		"terminal.ansiCyan": "#3AA99F",
+		"terminal.ansiGreen": "#879A39",
+		"terminal.ansiMagenta": "#CE5D97",
+		"terminal.ansiRed": "#D14D41",
+		"terminal.ansiWhite": "#100F0F",
+		"terminal.ansiYellow": "#D0A215",
+		"terminal.background": "#F2F0E5",
+		"statusBar.background": "#F2F0E5",
+		"statusBar.noFolderBackground": "#DAD8CE",
+		"scrollbarSlider.activeBackground": "#E6E4D9",
+		"scrollbarSlider.background": "#CECDC3",
+		"scrollbarSlider.hoverBackground": "#B7B5AC",
+		"dropdown.background": "#E6E4D9",
+		"extensionButton.prominentBackground": "#66800B",
+		"extensionButton.prominentHoverBackground": "#66800B",
+		"input.background": "#CECDC3",
+		"panel.background": "#E6E4D9",
+		"peekViewEditor.background": "#E6E4D9",
+		"peekViewEditor.matchHighlightBackground": "#B7B5AC",
+		"peekViewEditorGutter.background": "#DAD8CE",
+		"peekViewResult.background": "#CECDC3",
+		"peekViewResult.matchHighlightBackground": "#DAD8CE",
+		"peekViewResult.selectionBackground": "#B7B5AC",
+		"peekViewTitle.background": "#B7B5AC",
+		"progressBar.background": "#205EA6"
+	},
 	// explorer
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
 	"window.customMenuBarAltFocus": false,
 	"window.enableMenuBarMnemonics": false,
 	"window.titleBarStyle": "custom",
+	"window.dialogStyle": "custom",
 	"vsicons.dontShowNewVersionMessage": true,
 	"workbench.iconTheme": "vscode-icons",
-	"workbench.colorTheme": "Default Dark+",
 	"workbench.quickOpen.closeOnFocusLost": false,
 	// Outline Map
 	"editor.minimap.enabled": false,
@@ -19,8 +74,8 @@
 	"update.showReleaseNotes": false,
 	"workbench.enableExperiments": false,
 	// editor
-	"window.zoomLevel": 0.8,
-	"editor.fontSize": 26,
+	"window.zoomLevel": 1,
+	"editor.fontSize": 25,
 	"editor.fontLigatures": true,
 	"editor.fontFamily": "Fira Code Light, Fira Code, Noto Sans Mono CJK SC",
 	"editor.renderWhitespace": "boundary",
@@ -38,6 +93,7 @@
 	},
 	"workbench.localHistory.enabled": false,
 	// Copilot
+	"chat.editor.fontSize": 18,
 	"editor.inlineSuggest.enabled": true,
 	"github.copilot.enable": {
 		"*": true,
@@ -46,7 +102,9 @@
 		"markdown": true
 	},
 	// terminal
+	"debug.console.fontSize": 18,
 	"debug.console.fontFamily": "Fira Code, Noto Sans Mono CJK SC",
+	"terminal.integrated.fontSize": 18,
 	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.allowChords": false,
 	"terminal.integrated.sendKeybindingsToShell": true,
@@ -75,6 +133,11 @@
 	"search.exclude": {
 		"**/.vscode/": true,
 		"**/tsconfig*": true
+	},
+	// file ext association
+	"files.associations": {
+		"*.ssv": "csv (whitespace)",
+		"*.psv": "csv (pipe)"
 	},
 	// watcher
 	"files.watcherExclude": {
@@ -134,6 +197,7 @@
 	"scss.lint.duplicateProperties": "warning",
 	"scss.lint.ieHack": "warning",
 	"scss.lint.unknownVendorSpecificProperties": "warning",
+	// Emmet
 	"emmet.variables": {
 		"lang": "zh-CN"
 	},
@@ -198,6 +262,10 @@
 		"superglobals",
 		"Zend OPcache"
 	],
+	// CSV
+	"[csv][dynamic csv][tsv][csv (semicolon)][csv (whitespace)]": {
+		"editor.stickyScroll.enabled": true
+	},
 	// Python
 	"python.formatting.provider": "black",
 	"python.formatting.blackPath": "/usr/local/bin/black",

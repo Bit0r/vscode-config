@@ -9,6 +9,8 @@ darkriszty.markdown-table-prettify
 dberezin.lox-language
 deitry.apt-source-list-syntax
 donjayamanne.githistory
+donjayamanne.python-environment-manager
+EmeryBerger.scalene
 foam.foam-vscode
 Gerrnperl.outline-map
 GitHub.copilot
@@ -16,12 +18,12 @@ GitHub.copilot-chat
 GitHub.copilot-labs
 github.vscode-github-actions
 golang.go
-GrapeCity.gc-excelviewer
 hangxingliu.vscode-systemd-support
 hellorusk.markdown-table-maker
 HuggingFace.huggingface-vscode
 Jannchie.codetime
 maixiaojie.git-emoji-zh
+mechatroner.rainbow-csv
 ms-azuretools.vscode-docker
 MS-CEINTL.vscode-language-pack-zh-hans
 ms-iot.vscode-ros
@@ -39,7 +41,9 @@ ms-vscode.cpptools
 ms-vscode.hexeditor
 ms-vscode.makefile-tools
 ms-vscode.remote-explorer
+nico-castell.linux-desktop-file
 njpwerner.autodocstring
+njqdev.vscode-python-typehint
 notZaki.pandocciter
 nvarner.typst-lsp
 OMKOV.vscode-ebnf
@@ -49,7 +53,6 @@ redhat.vscode-xml
 redhat.vscode-yaml
 rust-lang.rust-analyzer
 sandcastle.vscode-open
-svelte.svelte-vscode
 tamasfe.even-better-toml
 Terrastruct.d2
 tomoki1207.pdf

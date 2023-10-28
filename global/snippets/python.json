@@ -14,7 +14,9 @@
 			"import xarray as xr",
 			"import pandas as pd",
 			"import polars as pl",
-			"from plotnine import *"
+			"from matplotlib import pyplot as plt",
+			"from plotnine import *",
+			"from sklearn import metrics",
 		],
 		"description": "Import Basic Data Science Libraries"
 	},
@@ -31,7 +33,7 @@
 			"from equinox import nn",
 			"import optax",
 			"from torch.utils.data import DataLoader, Dataset",
-			"from torch.utils.tensorboard import SummaryWriter"
+			"from torch.utils.tensorboard import SummaryWriter",
 		],
 		"description": "Import Jax Libraries"
 	},
@@ -45,16 +47,18 @@
 			"from torch.utils.data import DataLoader, Dataset",
 			"from torch.utils.tensorboard import SummaryWriter",
 			"from torchvision import datasets, transforms",
-			"from torchvision.utils import make_grid"
+			"from torchvision.utils import make_grid",
 		]
 	},
 	"Hugging Face": {
 		"prefix": "import_huggingface",
 		"body": [
-			"from transformers import pipeline, get_scheduler, AutoTokenizer, AutoModel, DataCollatorWithPadding, TrainingArguments, Trainer",
+			"from transformers import pipeline, get_scheduler, AutoTokenizer, AutoModelForCausalLM, HfArgumentParser, BitsAndBytesConfig, TrainingArguments, Trainer",
+			"from peft import LoraConfig",
+			"from trl import DPOTrainer",
 			"from datasets import load_dataset",
 			"from accelerate import Accelerator",
-			"from evaluate import load as eval_load"
+			"from evaluate import load as eval_load",
 		]
 	}
 }
