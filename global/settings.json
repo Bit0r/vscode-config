@@ -77,7 +77,8 @@
 	"window.zoomLevel": 1,
 	"editor.fontSize": 25,
 	"editor.fontLigatures": true,
-	"editor.fontFamily": "Fira Code Light, Fira Code, Noto Sans Mono CJK SC",
+	//"editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss06', 'ss07', 'ss08'",
+	"editor.fontFamily": "Fira Code Light, Noto Sans Mono CJK SC Light, monospace",
 	"editor.renderWhitespace": "boundary",
 	"editor.renderControlCharacters": false,
 	"editor.inlineSuggest.showToolbar": "always",
@@ -103,7 +104,7 @@
 	},
 	// terminal
 	"debug.console.fontSize": 18,
-	"debug.console.fontFamily": "Fira Code, Noto Sans Mono CJK SC",
+	"debug.console.fontFamily": "Fira Code Light, Noto Sans Mono CJK SC Light, monospace",
 	"terminal.integrated.fontSize": 18,
 	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.allowChords": false,
@@ -286,7 +287,7 @@
 	"[python]": {
 		"editor.insertSpaces": true,
 	},
-	"autoDocstring.docstringFormat": "numpy",
+	"autoDocstring.docstringFormat": "pep257",
 	"autoDocstring.startOnNewLine": true,
 	// Rust
 	"rust-analyzer.server.path": "/usr/local/bin/rust-analyzer",
@@ -321,5 +322,12 @@
 	"spring.initializr.serviceUrl": [
 		"https://start.spring.io",
 		"https://start.springboot.io"
-	]
+	],
+	// Android Reverse Engineering
+	"apklab.apkSignerPath": "/opt/apk-signer/uber-apk-signer.jar",
+	"apklab.apktoolPath": "/opt/apktool/apktool.jar",
+	"apklab.jadxDirPath": "/opt/jadx/",
+	"apklab.initProjectDirAsGit": false,
+	"apklab.updateTools": false,
+	"diffEditor.hideUnchangedRegions.enabled": true,
 }

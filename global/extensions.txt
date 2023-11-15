@@ -12,16 +12,16 @@ donjayamanne.githistory
 donjayamanne.python-environment-manager
 EmeryBerger.scalene
 foam.foam-vscode
+geezmolycos.vscode-hanzi-counter
 Gerrnperl.outline-map
 GitHub.copilot
 GitHub.copilot-chat
-GitHub.copilot-labs
 github.vscode-github-actions
 golang.go
 hangxingliu.vscode-systemd-support
 hellorusk.markdown-table-maker
-HuggingFace.huggingface-vscode
 Jannchie.codetime
+LoyieKing.smalise
 maixiaojie.git-emoji-zh
 mechatroner.rainbow-csv
 ms-azuretools.vscode-docker
@@ -43,7 +43,6 @@ ms-vscode.makefile-tools
 ms-vscode.remote-explorer
 nico-castell.linux-desktop-file
 njpwerner.autodocstring
-njqdev.vscode-python-typehint
 notZaki.pandocciter
 nvarner.typst-lsp
 OMKOV.vscode-ebnf
@@ -52,7 +51,9 @@ redhat.java
 redhat.vscode-xml
 redhat.vscode-yaml
 rust-lang.rust-analyzer
+ryu1kn.partial-diff
 sandcastle.vscode-open
+Surendrajat.apklab
 tamasfe.even-better-toml
 Terrastruct.d2
 tomoki1207.pdf
