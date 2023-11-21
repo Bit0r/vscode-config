@@ -3,8 +3,8 @@
 	//"http.proxySupport": "on",
 	// theme
 	"workbench.colorTheme": "Default Light Modern",
+	// Flexoki-Light
 	"workbench.colorCustomizations": {
-		// Flexoki-Light
 		"editor.background": "#FFFCF0",
 		"editorSuggestWidget.selectedBackground": "#B7B5AC",
 		"editorWidget.background": "#DAD8CE",
@@ -68,7 +68,7 @@
 	"workbench.quickOpen.closeOnFocusLost": false,
 	// Outline Map
 	"editor.minimap.enabled": false,
-	"outline-map.follow": "viewport",
+	"outline-map.follow": "manual",
 	// update
 	"update.mode": "manual",
 	"update.showReleaseNotes": false,
@@ -100,7 +100,8 @@
 		"*": true,
 		"yaml": true,
 		"plaintext": true,
-		"markdown": true
+		"markdown": true,
+		"quarto": true,
 	},
 	// terminal
 	"debug.console.fontSize": 18,
@@ -329,5 +330,4 @@
 	"apklab.jadxDirPath": "/opt/jadx/",
 	"apklab.initProjectDirAsGit": false,
 	"apklab.updateTools": false,
-	"diffEditor.hideUnchangedRegions.enabled": true,
 }
