@@ -4,6 +4,7 @@ adpyke.codesnap
 ahmadalli.vscode-nginx-conf
 astro-build.astro-vscode
 bmalehorn.vscode-fish
+charliermarsh.ruff
 ChrisChinchilla.vscode-pandoc
 CodFrm.scriptcat-vscode
 darkriszty.markdown-table-prettify
@@ -12,6 +13,7 @@ deitry.apt-source-list-syntax
 donjayamanne.githistory
 donjayamanne.python-environment-manager
 EmeryBerger.scalene
+esdmr.fish-completion
 foam.foam-vscode
 geezmolycos.vscode-hanzi-counter
 Gerrnperl.outline-map
@@ -23,7 +25,6 @@ hangxingliu.vscode-systemd-support
 hellorusk.markdown-table-maker
 Jannchie.codetime
 LoyieKing.smalise
-maixiaojie.git-emoji-zh
 mechatroner.rainbow-csv
 ms-azuretools.vscode-docker
 MS-CEINTL.vscode-language-pack-zh-hans

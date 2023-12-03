@@ -9,5 +9,5 @@ cp *.json ~/.config/Code/User/
 
 # 安装插件
 for ext in (cat extensions.txt)
-	code --install-extension $ext
+    code --install-extension $ext
 end

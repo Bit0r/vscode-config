@@ -269,12 +269,7 @@
 		"editor.stickyScroll.enabled": true
 	},
 	// Python
-	"python.formatting.provider": "black",
-	"python.formatting.blackPath": "/usr/local/bin/black",
-	"python.linting.enabled": true,
-	"python.linting.pylintEnabled": false,
-	"python.linting.flake8Enabled": true,
-	"python.linting.flake8Path": "/usr/local/bin/ruff",
+	"ruff.lint.run": "onSave",
 	"python.analysis.typeCheckingMode": "off",
 	"python.analysis.autoImportCompletions": false,
 	"notebook.output.scrolling": true,
