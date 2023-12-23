@@ -73,6 +73,13 @@
 	"update.mode": "manual",
 	"update.showReleaseNotes": false,
 	"workbench.enableExperiments": false,
+	// file ext association
+	"files.associations": {
+		"*.ssv": "csv (whitespace)",
+		"*.psv": "csv (pipe)",
+		"*rc": "properties",
+		"*ignore": "ignore",
+	},
 	// editor
 	"window.zoomLevel": 1,
 	"editor.fontSize": 25,
@@ -84,7 +91,7 @@
 	"editor.inlineSuggest.showToolbar": "always",
 	"editor.suggest.snippetsPreventQuickSuggestions": false,
 	"editor.codeActionsOnSave": {
-		"source.organizeImports": true
+		"source.organizeImports": "explicit"
 	},
 	"workbench.editor.enablePreview": false,
 	"workbench.editor.tabSizing": "shrink",
@@ -136,11 +143,6 @@
 		"**/.vscode/": true,
 		"**/tsconfig*": true
 	},
-	// file ext association
-	"files.associations": {
-		"*.ssv": "csv (whitespace)",
-		"*.psv": "csv (pipe)"
-	},
 	// watcher
 	"files.watcherExclude": {
 		"**/composer.lock": true,
@@ -169,15 +171,13 @@
 	"remote.SSH.lockfilesInTmp": true,
 	//"remote.SSH.showLoginTerminal": true,
 	"remote.SSH.useLocalServer": false,
-	//"remote.SSH.remoteServerListenOnSocket": true, // 打开此项可以提高安全性，但是可能会导致autodl连接失败
+	"remote.SSH.remoteServerListenOnSocket": true, // 打开此项可以提高安全性，但是可能会导致autodl连接失败
 	"remote.SSH.enableX11Forwarding": false,
-	"remote.SSH.localServerDownload": "always",
+	//"remote.SSH.localServerDownload": "always", // https://github.com/microsoft/vscode-remote-release/issues/9246
 	"remote.SSH.remotePlatform": {
-		"zw403-1080ti": "linux",
-		"autodl": "linux",
-		"autodl-a4000": "linux",
-		"autodl-a5000": "linux",
-		"autodl-a40": "linux"
+		"*": "linux",
+		"zw403-*": "linux",
+		"autodl-*": "linux"
 	},
 	// C
 	"C_Cpp.clang_format_path": "/usr/bin/clang-format",
@@ -210,13 +210,14 @@
 		"svelte": "html"
 	},
 	// JavaScript/Typescript
-	"svelte.enable-ts-plugin": true,
+	"npm.packageManager": "yarn",
 	"javascript.suggest.autoImports": false,
 	"typescript.suggest.autoImports": false,
 	"[javascript]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
 	// Svete
+	"svelte.enable-ts-plugin": true,
 	"svelte.plugin.css.completions.emmet": false,
 	"svelte.plugin.html.completions.emmet": false,
 	"svelte.plugin.svelte.format.config.singleQuote": true,
