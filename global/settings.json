@@ -73,11 +73,29 @@
 	"update.mode": "manual",
 	"update.showReleaseNotes": false,
 	"workbench.enableExperiments": false,
+	// exclude
+	"files.exclude": {
+		"**/wandb": true
+	},
+	"search.exclude": {
+		"**/.vscode/": true,
+		"**/tsconfig*": true
+	},
+	"files.watcherExclude": {
+		"**/composer.lock": true,
+		"**/dist/**": true,
+		"**/pnpm-lock.yaml": true,
+		"**/polyfill*": true,
+		"**/vendor/**": true,
+		"**/yarn.lock": true,
+		"**/*.class": true
+	},
 	// file ext association
 	"files.associations": {
 		"*.ssv": "csv (whitespace)",
 		"*.psv": "csv (pipe)",
 		"*rc": "properties",
+		"*env": "properties",
 		"*ignore": "ignore",
 	},
 	// editor
@@ -127,7 +145,8 @@
 		"vi",
 		"nano",
 		"tmux",
-		"micro"
+		"micro",
+		"editor"
 	],
 	// format
 	"files.eol": "\n",
@@ -138,21 +157,6 @@
 	"files.trimTrailingWhitespace": true,
 	//"notebook.formatOnSave.enabled": true,
 	"notebook.formatOnCellExecution": true,
-	// search
-	"search.exclude": {
-		"**/.vscode/": true,
-		"**/tsconfig*": true
-	},
-	// watcher
-	"files.watcherExclude": {
-		"**/composer.lock": true,
-		"**/dist/**": true,
-		"**/pnpm-lock.yaml": true,
-		"**/polyfill*": true,
-		"**/vendor/**": true,
-		"**/yarn.lock": true,
-		"**/*.class": true
-	},
 	// Git
 	"git.enableSmartCommit": true,
 	"scm.diffDecorationsIgnoreTrimWhitespace": "inherit",
@@ -168,6 +172,8 @@
 		".svn"
 	],
 	// Remote
+	"remote.autoForwardPorts": false,
+	"remote.autoForwardPortsSource": "process",
 	"remote.SSH.lockfilesInTmp": true,
 	//"remote.SSH.showLoginTerminal": true,
 	"remote.SSH.useLocalServer": false,

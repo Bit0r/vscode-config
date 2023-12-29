@@ -12,6 +12,7 @@
 			"import einops as ein",
 			"import numpy as np",
 			"import orjson",
+			"from loguru import logger",
 			"import pandas as pd",
 			"import polars as pl",
 			"import snoop",
