@@ -66,6 +66,7 @@
 	"vsicons.dontShowNewVersionMessage": true,
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.quickOpen.closeOnFocusLost": false,
+	"security.workspace.trust.untrustedFiles": "open",
 	// Outline Map
 	"editor.minimap.enabled": false,
 	"outline-map.follow": "manual",
@@ -94,13 +95,15 @@
 	"files.associations": {
 		"*.ssv": "csv (whitespace)",
 		"*.psv": "csv (pipe)",
+		"*.usv": "dynamic csv",
 		"*rc": "properties",
+		"*config": "properties",
 		"*env": "properties",
 		"*ignore": "ignore",
 	},
 	// editor
-	"window.zoomLevel": 1,
-	"editor.fontSize": 25,
+	"window.zoomLevel": 0.5,
+	"editor.fontSize": 22,
 	"editor.fontLigatures": true,
 	//"editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss06', 'ss07', 'ss08'",
 	"editor.fontFamily": "Fira Code Light, Noto Sans Mono CJK SC Light, monospace",
@@ -119,7 +122,7 @@
 	},
 	"workbench.localHistory.enabled": false,
 	// Copilot
-	"chat.editor.fontSize": 18,
+	"chat.editor.fontSize": 22,
 	"editor.inlineSuggest.enabled": true,
 	"github.copilot.enable": {
 		"*": true,
@@ -129,9 +132,9 @@
 		"quarto": true,
 	},
 	// terminal
-	"debug.console.fontSize": 18,
+	"debug.console.fontSize": 20,
 	"debug.console.fontFamily": "Fira Code Light, Noto Sans Mono CJK SC Light, monospace",
-	"terminal.integrated.fontSize": 18,
+	"terminal.integrated.fontSize": 20,
 	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.allowChords": false,
 	"terminal.integrated.sendKeybindingsToShell": true,
@@ -160,6 +163,8 @@
 	// Git
 	"git.enableSmartCommit": true,
 	"scm.diffDecorationsIgnoreTrimWhitespace": "inherit",
+	"conventionalCommits.autoCommit": false,
+	"conventionalCommits.emojiFormat": "emoji",
 	// CodeSnap
 	"codesnap.showWindowControls": false,
 	"codesnap.target": "window",
@@ -216,20 +221,20 @@
 		"svelte": "html"
 	},
 	// JavaScript/Typescript
-	"npm.packageManager": "yarn",
+	"svelte.enable-ts-plugin": true,
 	"javascript.suggest.autoImports": false,
 	"typescript.suggest.autoImports": false,
+	"npm.packageManager": "yarn",
 	"[javascript]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
 	// Svete
-	"svelte.enable-ts-plugin": true,
 	"svelte.plugin.css.completions.emmet": false,
 	"svelte.plugin.html.completions.emmet": false,
 	"svelte.plugin.svelte.format.config.singleQuote": true,
 	"svelte.plugin.svelte.format.config.svelteAllowShorthand": false,
 	// Markdown
-	"markdown.preview.fontSize": 24,
+	"markdown.preview.fontSize": 22,
 	"markdown-toc.detectAndAutoSetSection": false,
 	"markdown-toc.updateOnSave": false,
 	"pandoc.docxOptString": "-d pandoc",
