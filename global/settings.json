@@ -69,7 +69,10 @@
 	"security.workspace.trust.untrustedFiles": "open",
 	// Outline Map
 	"editor.minimap.enabled": false,
-	"outline-map.follow": "manual",
+	"outline-map.follow": "viewport",
+	// Bookmarks
+	"bookmarks.saveBookmarksInProject": true,
+	"bookmarks.useWorkaroundForFormatters": true,
 	// update
 	"update.mode": "manual",
 	"update.showReleaseNotes": false,
@@ -108,7 +111,9 @@
 	//"editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss06', 'ss07', 'ss08'",
 	"editor.fontFamily": "Fira Code Light, Noto Sans Mono CJK SC Light, monospace",
 	"editor.renderWhitespace": "boundary",
-	"editor.renderControlCharacters": false,
+	"editor.renderControlCharacters": true,
+	"editor.stickyScroll.enabled": false,
+	"editor.largeFileOptimizations": false,
 	"editor.inlineSuggest.showToolbar": "always",
 	"editor.suggest.snippetsPreventQuickSuggestions": false,
 	"editor.codeActionsOnSave": {
@@ -142,7 +147,7 @@
 	"terminal.integrated.enablePersistentSessions": false,
 	"terminal.integrated.persistentSessionReviveProcess": "never",
 	"terminal.integrated.shellIntegration.decorationsEnabled": "both",
-	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"terminal.integrated.enableMultiLinePasteWarning": "never",
 	"terminal.integrated.localEchoExcludePrograms": [
 		"vim",
 		"vi",
@@ -168,6 +173,10 @@
 	// CodeSnap
 	"codesnap.showWindowControls": false,
 	"codesnap.target": "window",
+	// CSV
+	"[csv][dynamic csv][tsv][csv (semicolon)][csv (whitespace)]": {
+		"editor.stickyScroll.enabled": true
+	},
 	// rsync
 	"sync-rsync.onSaveIndividual": true,
 	//"sync-rsync.shell": "sshpass -f ~/.ssh/vm.pass ssh vm",
@@ -184,7 +193,8 @@
 	"remote.SSH.useLocalServer": false,
 	"remote.SSH.remoteServerListenOnSocket": true, // 打开此项可以提高安全性，但是可能会导致autodl连接失败
 	"remote.SSH.enableX11Forwarding": false,
-	//"remote.SSH.localServerDownload": "always", // https://github.com/microsoft/vscode-remote-release/issues/9246
+	//"remote.downloadExtensionsLocally": true, // 本地下载扩展，避免网络问题
+	//"remote.SSH.localServerDownload": "always", // 本地下载服务器，避免网络问题，但有 bug: https://github.com/microsoft/vscode-remote-release/issues/9246
 	"remote.SSH.remotePlatform": {
 		"*": "linux",
 		"zw403-*": "linux",
@@ -197,6 +207,13 @@
 		"cmake",
 		"gcc",
 		"gnuld"
+	],
+	// dotnet
+	"dotnetAcquisitionExtension.existingDotnetPath": [
+		{
+			"extensionId": "msazurermtools.azurerm-vscode-tools",
+			"path": "dotnet"
+		}
 	],
 	// CMake
 	"cmake.languageSupport.dotnetPath": "dotnet",
@@ -228,6 +245,11 @@
 	"[javascript]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
+	// Vue
+	"vue.autoInsert.dotValue": true,
+	"[vue]": {
+		"editor.defaultFormatter": "Vue.volar"
+	},
 	// Svete
 	"svelte.plugin.css.completions.emmet": false,
 	"svelte.plugin.html.completions.emmet": false,
@@ -237,11 +259,14 @@
 	"markdown.preview.fontSize": 22,
 	"markdown-toc.detectAndAutoSetSection": false,
 	"markdown-toc.updateOnSave": false,
+	"pandoc.docker.enabled": false,
 	"pandoc.docxOptString": "-d pandoc",
 	"pandoc.htmlOptString": "-d pandoc",
 	"pandoc.pdfOptString": "-d pandoc",
 	"pandoc.render.openViewer": false,
-	"pandoc.useDocker": false,
+	"[markdown]": {
+		"vscode-hanzi-counter.template.tooltipTemplateName": "zh-hans",
+	},
 	// Typst
 	"typst-lsp.exportPdf": "never",
 	// yaml
@@ -276,14 +301,11 @@
 		"superglobals",
 		"Zend OPcache"
 	],
-	// CSV
-	"[csv][dynamic csv][tsv][csv (semicolon)][csv (whitespace)]": {
-		"editor.stickyScroll.enabled": true
-	},
 	// Python
 	"ruff.lint.run": "onSave",
 	"python.analysis.typeCheckingMode": "off",
 	"python.analysis.autoImportCompletions": false,
+	"notebook.lineNumbers": "on",
 	"notebook.output.scrolling": true,
 	"jupyter.disableJupyterAutoStart": false,
 	"jupyter.pythonExportMethod": "commentMagics",
