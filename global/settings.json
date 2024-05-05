@@ -102,7 +102,7 @@
 		"*rc": "properties",
 		"*config": "properties",
 		"*env": "properties",
-		"*ignore": "ignore",
+		"*ignore": "ignore"
 	},
 	// editor
 	"window.zoomLevel": 0.5,
@@ -134,7 +134,7 @@
 		"yaml": true,
 		"plaintext": true,
 		"markdown": true,
-		"quarto": true,
+		"quarto": true
 	},
 	// terminal
 	"debug.console.fontSize": 20,
@@ -167,6 +167,7 @@
 	"notebook.formatOnCellExecution": true,
 	// Git
 	"git.enableSmartCommit": true,
+	"diffEditor.hideUnchangedRegions.enabled": true,
 	"scm.diffDecorationsIgnoreTrimWhitespace": "inherit",
 	"conventionalCommits.autoCommit": false,
 	"conventionalCommits.emojiFormat": "emoji",
@@ -247,6 +248,8 @@
 	},
 	// Vue
 	"vue.autoInsert.dotValue": true,
+	"vue.codeActions.enabled": false,
+	"vue.codeActions.askNewComponentName": false,
 	"[vue]": {
 		"editor.defaultFormatter": "Vue.volar"
 	},
@@ -265,7 +268,7 @@
 	"pandoc.pdfOptString": "-d pandoc",
 	"pandoc.render.openViewer": false,
 	"[markdown]": {
-		"vscode-hanzi-counter.template.tooltipTemplateName": "zh-hans",
+		"vscode-hanzi-counter.template.tooltipTemplateName": "zh-hans"
 	},
 	// Typst
 	"typst-lsp.exportPdf": "never",
@@ -303,6 +306,8 @@
 	],
 	// Python
 	"ruff.lint.run": "onSave",
+	"djlint.useVenv": false,
+	"djlint.pythonPath": "/usr/local/lib/pipx/venvs/djlint/bin/python",
 	"python.analysis.typeCheckingMode": "off",
 	"python.analysis.autoImportCompletions": false,
 	"notebook.lineNumbers": "on",
@@ -315,7 +320,10 @@
 		"unpkg.com"
 	],
 	"[python]": {
-		"editor.insertSpaces": true,
+		"editor.insertSpaces": true
+	},
+	"[django-html][handlebars][hbs][mustache][jinja][jinja-html][nj][njk][nunjucks][twig]": {
+		"editor.defaultFormatter": "monosans.djlint"
 	},
 	"autoDocstring.docstringFormat": "pep257",
 	"autoDocstring.startOnNewLine": true,
@@ -358,5 +366,5 @@
 	"apklab.apktoolPath": "/opt/apktool/apktool.jar",
 	"apklab.jadxDirPath": "/opt/jadx/",
 	"apklab.initProjectDirAsGit": false,
-	"apklab.updateTools": false,
+	"apklab.updateTools": false
 }

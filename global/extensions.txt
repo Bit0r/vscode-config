@@ -3,18 +3,20 @@
 adpyke.codesnap
 ahmadalli.vscode-nginx-conf
 alefragnani.bookmarks
-astro-build.astro-vscode
 bmalehorn.vscode-fish
 charliermarsh.ruff
 chrischinchilla.vscode-pandoc
 codfrm.scriptcat-vscode
 darkriszty.markdown-table-prettify
+dbaeumer.vscode-eslint
 dberezin.lox-language
 deitry.apt-source-list-syntax
 donjayamanne.githistory
 donjayamanne.python-environment-manager
 emeryberger.scalene
+esbenp.prettier-vscode
 esdmr.fish-completion
+exiasr.hadolint
 figma.figma-vscode-extension
 foam.foam-vscode
 geezmolycos.vscode-hanzi-counter
@@ -26,6 +28,7 @@ github.vscode-github-actions
 golang.go
 hangxingliu.vscode-systemd-support
 hellorusk.markdown-table-maker
+ionutvmi.reg
 jannchie.codetime
 lehoanganh298.json-lines-viewer
 loyieking.smalise
@@ -36,6 +39,7 @@ ms-azuretools.vscode-docker
 ms-ceintl.vscode-language-pack-zh-hans
 ms-dotnettools.vscode-dotnet-runtime
 ms-iot.vscode-ros
+ms-playwright.playwright
 ms-python.debugpy
 ms-python.python
 ms-python.vscode-pylance
@@ -53,7 +57,6 @@ ms-vscode.hexeditor
 ms-vscode.makefile-tools
 ms-vscode.remote-explorer
 nico-castell.linux-desktop-file
-njpwerner.autodocstring
 notzaki.pandocciter
 nvarner.typst-lsp
 omkov.vscode-ebnf
@@ -71,6 +74,7 @@ terrastruct.d2
 tomoki1207.pdf
 trentrand.git-rebase-shortcuts
 tyriar.sort-lines
+vabjs.element-plus-helper
 vivaxy.vscode-conventional-commits
 vmware.vscode-spring-boot
 vscjava.vscode-java-debug
