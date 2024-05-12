@@ -13,6 +13,7 @@ dberezin.lox-language
 deitry.apt-source-list-syntax
 donjayamanne.githistory
 donjayamanne.python-environment-manager
+dprint.dprint
 emeryberger.scalene
 esbenp.prettier-vscode
 esdmr.fish-completion
@@ -30,6 +31,7 @@ hangxingliu.vscode-systemd-support
 hellorusk.markdown-table-maker
 ionutvmi.reg
 jannchie.codetime
+jsonhero.jsonhero-vscode
 lehoanganh298.json-lines-viewer
 loyieking.smalise
 marimo-team.vscode-marimo
@@ -38,7 +40,6 @@ mechatroner.rainbow-csv
 ms-azuretools.vscode-docker
 ms-ceintl.vscode-language-pack-zh-hans
 ms-dotnettools.vscode-dotnet-runtime
-ms-iot.vscode-ros
 ms-playwright.playwright
 ms-python.debugpy
 ms-python.python
@@ -74,6 +75,7 @@ terrastruct.d2
 tomoki1207.pdf
 trentrand.git-rebase-shortcuts
 tyriar.sort-lines
+urosmrkobrada.jinja-lsp
 vabjs.element-plus-helper
 vivaxy.vscode-conventional-commits
 vmware.vscode-spring-boot
