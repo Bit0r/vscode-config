@@ -71,6 +71,7 @@ ryu1kn.partial-diff
 sandcastle.vscode-open
 surendrajat.apklab
 tamasfe.even-better-toml
+tekumara.typos-vscode
 terrastruct.d2
 tomoki1207.pdf
 trentrand.git-rebase-shortcuts
