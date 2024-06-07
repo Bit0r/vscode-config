@@ -106,7 +106,7 @@
     "*ignore": "ignore"
   },
   // editor
-  "window.zoomLevel": 0.5,
+  "window.zoomLevel": 0.4,
   "editor.fontSize": 22,
   "editor.fontLigatures": true,
   //"editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss06', 'ss07', 'ss08'",
@@ -246,6 +246,7 @@
   "svelte.enable-ts-plugin": true,
   "javascript.suggest.autoImports": false,
   "typescript.suggest.autoImports": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
   "npm.packageManager": "yarn",
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -255,7 +256,8 @@
   "vue.codeActions.enabled": false,
   "vue.codeActions.askNewComponentName": false,
   "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
+    // "editor.defaultFormatter": "Vue.volar"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // Markdown
   "markdown.preview.fontSize": 22,
