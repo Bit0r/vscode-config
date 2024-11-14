@@ -1,0 +1,10 @@
+{
+	"i18n-ally.displayLanguage": "zh-Hans",
+	"i18n-ally.localesPaths": [
+		"app/locales",
+	],
+	"nuxtr.vueFiles.pages.defaultTemplate": "i18n.vue",
+	"nuxtr.vueFiles.layouts.defaultTemplate": "i18n.vue",
+	"editor.lineNumbers": "off",
+	"editor.glyphMargin": false
+}

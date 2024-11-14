@@ -1,5 +1,24 @@
 [
     {
+        "key": "f6",
+        "command": "settings.cycle",
+        "when": "editorFocus",
+        "args": {
+            "id": "lineNumbers",
+            "overrideWorkspaceSettings": true,
+            "values": [
+                {
+                    "editor.lineNumbers": "off",
+                    "editor.glyphMargin": false
+                },
+                {
+                    "editor.lineNumbers": "on",
+                    "editor.glyphMargin": true
+                }
+            ]
+        }
+    },
+    {
         "key": "f11",
         "command": "editor.action.blockComment",
         "when": "editorTextFocus && !editorReadonly"

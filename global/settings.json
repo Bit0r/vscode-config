@@ -5,6 +5,7 @@
 	"workbench.colorTheme": "Flexoki Dark Green",
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
+	"explorer.incrementalNaming": "smart",
 	"window.restoreWindows": "none",
 	"window.customMenuBarAltFocus": false,
 	"window.enableMenuBarMnemonics": false,
@@ -58,12 +59,14 @@
 	},
 	// editor
 	"window.zoomLevel": 0.4,
+	"editor.tabSize": 2,
 	"editor.fontSize": 22,
 	"editor.fontLigatures": true,
 	//"editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss06', 'ss07', 'ss08'",
 	"editor.fontFamily": "Fira Code Light, Noto Sans Mono CJK SC Light, monospace",
 	"editor.renderWhitespace": "boundary",
 	"editor.renderControlCharacters": true,
+	"editor.linkedEditing": true,
 	"editor.stickyScroll.enabled": false,
 	"editor.largeFileOptimizations": false,
 	"editor.inlineSuggest.showToolbar": "always",
@@ -71,14 +74,11 @@
 	"editor.suggest.snippetsPreventQuickSuggestions": false,
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": "explicit",
-		"quickfix.biome": "explicit"
-		// "source.organizeImports.biome": "explicit"
 	},
 	"workbench.editor.tabSizing": "shrink",
 	"workbench.editor.wrapTabs": true,
 	"workbench.editor.enablePreview": false,
 	"interactiveWindow.executeWithShiftEnter": true,
-	"workbench.editor.splitInGroupLayout": "vertical",
 	"workbench.editorAssociations": {
 		"*.ipynb": "jupyter-notebook"
 	},
@@ -94,7 +94,9 @@
 		"quarto": true
 	},
 	"aide.readClipboardImage": true,
-	// Terminal
+	"aide.openaiBaseUrl": "https://40.chatgptsb.net/v1",
+	"aide.openaiKey": "sk-7qPBOvBZiTITUOG76604612302B84cDb86A2A456B620262a",
+	// terminal
 	"debug.console.fontSize": 20,
 	"debug.console.fontFamily": "Fira Code Light, Noto Sans Mono CJK SC Light, monospace",
 	"terminal.integrated.fontSize": 20,
@@ -128,21 +130,24 @@
 	"dprint.experimentalLsp": true,
 	// Git
 	"git.enableSmartCommit": true,
-	"diffEditor.hideUnchangedRegions.enabled": true,
-	"scm.diffDecorationsIgnoreTrimWhitespace": "inherit",
 	"conventionalCommits.autoCommit": false,
 	"conventionalCommits.emojiFormat": "emoji",
 	// CodeSnap
 	"codesnap.showWindowControls": false,
 	"codesnap.target": "window",
 	// CSV
+	"[dynamic csv]": {},
 	"[csv][dynamic csv][tsv][csv (semicolon)][csv (whitespace)]": {
 		"editor.stickyScroll.enabled": true
 	},
 	// rsync
 	"sync-rsync.onSaveIndividual": true,
 	//"sync-rsync.shell": "sshpass -f ~/.ssh/vm.pass ssh vm",
-	"sync-rsync.exclude": [".git", ".vscode", ".svn"],
+	"sync-rsync.exclude": [
+		".git",
+		".vscode",
+		".svn"
+	],
 	// Remote
 	"remote.autoForwardPorts": false,
 	"remote.autoForwardPortsSource": "process",
@@ -161,7 +166,11 @@
 	// C
 	"C_Cpp.clang_format_path": "/usr/bin/clang-format",
 	"cmake.configureOnOpen": false,
-	"cmake.enabledOutputParsers": ["cmake", "gcc", "gnuld"],
+	"cmake.enabledOutputParsers": [
+		"cmake",
+		"gcc",
+		"gnuld"
+	],
 	// dotnet
 	"dotnetAcquisitionExtension.existingDotnetPath": [
 		{
@@ -172,6 +181,9 @@
 	// CMake
 	"cmake.languageSupport.dotnetPath": "dotnet",
 	// HTML/CSS/SCSS
+	"html.format.wrapLineLength": 60,
+	"html.format.templating": true,
+	"html.format.indentHandlebars": true,
 	"open-php-html-js-in-browser.customBrowserPath": "/usr/bin/vivaldi",
 	"open-php-html-js-in-browser.selectedBrowser": "Custom...",
 	"css.lint.duplicateProperties": "warning",
@@ -185,30 +197,52 @@
 	"emmet.variables": {
 		"lang": "zh-CN"
 	},
-	"emmet.extensionsPath": ["./.vscode/emmet/"],
+	"emmet.extensionsPath": [
+		"./.vscode/emmet/"
+	],
 	"emmet.includeLanguages": {
 		"svelte": "html"
 		// "vue": "html",
 	},
-	"npm.packageManager": "yarn",
-	"[json][jsonc][javascript][typescript]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
+	"npm.packageManager": "pnpm",
 	// Vue
+	"javascript.format.semicolons": "remove",
+	"typescript.format.semicolons": "remove",
+	"javascript.preferences.quoteStyle": "single",
+	"typescript.preferences.quoteStyle": "single",
+	"javascript.updateImportsOnFileMove.enabled": "never",
+	"typescript.updateImportsOnFileMove.enabled": "never",
 	"vue.autoInsert.dotValue": true,
 	"vue.codeActions.enabled": false,
 	"vue.codeActions.askNewComponentName": false,
 	"vue.codeLens.enabled": false,
-	"vue.complete.casing.tags": "autoKebab",
 	"vue.splitEditors.icon": true,
 	"vue.updateImportsOnFileMove.enabled": false,
-	"vue.server.hybridMode": "typeScriptPluginOnly",
-	"vue.splitEditors.layout.right": ["script", "scriptSetup", "styles"],
-	"vue.splitEditors.layout.left": ["template", "customBlocks"],
+	"vue.server.hybridMode": false,
+	"vue.splitEditors.layout.right": [
+		"script",
+		"scriptSetup",
+		"styles"
+	],
+	"vue.splitEditors.layout.left": [
+		"template",
+		"customBlocks"
+	],
 	"[vue]": {
-		// "editor.defaultFormatter": "Vue.volar"
-		"editor.defaultFormatter": "biomejs.biome"
+		"editor.defaultFormatter": "Vue.volar"
 	},
+	"i18n-ally.editor.preferEditor": true,
+	"i18n-ally.enabledParsers": [
+		"yaml"
+	],
+	"i18n-ally.enabledFrameworks": [
+		"vue",
+		"vue-sfc"
+	],
+	// Nuxt
+	"nuxtr.piniaFiles.defaultTemplate": "setup",
+	"nuxtr.vueFiles.style.alwaysScoped": true,
+	"nuxtr.vueFiles.style.defaultLanguage": "scss",
 	// Markdown
 	"markdown.preview.fontSize": 22,
 	"markdown-toc.detectAndAutoSetSection": false,
@@ -221,19 +255,21 @@
 	"[markdown]": {
 		"vscode-hanzi-counter.template.tooltipTemplateName": "zh-hans"
 	},
-	"markdown.extension.list.toggle.candidate-markers": ["-", "1."],
+	"markdown.extension.list.toggle.candidate-markers": [
+		"-",
+		"1."
+	],
 	// D2
 	"D2.previewLayout": "tala",
 	// Typst
 	"typst-lsp.exportPdf": "never",
 	// yaml
 	"redhat.telemetry.enabled": true,
-	"[yaml]": {
+	"yaml.format.singleQuote": true,
+	"[yaml][github-actions-workflow]": {
+		"editor.tabSize": 2,
 		"editor.insertSpaces": true,
-		"diffEditor.ignoreTrimWhitespace": true
-	},
-	"[github-actions-workflow]": {
-		"editor.insertSpaces": true
+		"editor.detectIndentation": false
 	},
 	// PHP
 	"intelephense.stubs": [
@@ -273,10 +309,15 @@
 	"jupyter.disableJupyterAutoStart": false,
 	"jupyter.pythonExportMethod": "commentMagics",
 	"jupyter.allowUnauthorizedRemoteConnection": true,
-	"jupyter.widgetScriptSources": ["jsdelivr.com", "unpkg.com"],
+	"jupyter.widgetScriptSources": [
+		"jsdelivr.com",
+		"unpkg.com"
+	],
 	"[python]": {
+		"editor.tabSize": 4,
 		"editor.insertSpaces": true,
-		"editor.defaultFormatter": "charliermarsh.ruff"
+		"editor.detectIndentation": false,
+		"editor.defaultFormatter": "charliermarsh.ruff",
 	},
 	// "[django-html][handlebars][hbs][mustache][jinja][jinja-html][nj][njk][nunjucks][twig]": {
 	//   "editor.defaultFormatter": "monosans.djlint"

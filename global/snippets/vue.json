@@ -1,0 +1,18 @@
+{
+	"i18n Block": {
+		"prefix": "i18n",
+		"body": [
+			"<i18n lang=\"yaml\">",
+			"en:",
+			"  $1",
+			"",
+			"zh-Hans:",
+			"  $2",
+			"",
+			"ar:",
+			"  $3",
+			"</i18n>"
+		],
+		"description": "Insert an i18n block with common language options"
+	}
+}
