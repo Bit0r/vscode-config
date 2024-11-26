@@ -17,47 +17,11 @@
 	"security.workspace.trust.untrustedFiles": "open",
 	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.expand": false,
-	// Outline Map
-	"editor.minimap.enabled": false,
-	"outline-map.follow": "viewport",
-	// Bookmarks
-	"bookmarks.saveBookmarksInProject": true,
-	"bookmarks.useWorkaroundForFormatters": true,
-	// update
+	// Update
 	"update.mode": "manual",
 	"update.showReleaseNotes": false,
 	"workbench.enableExperiments": false,
-	// exclude
-	"files.exclude": {
-		"**/.oxen": true,
-		"**/wandb": true
-	},
-	"search.exclude": {
-		"**/.vscode/": true,
-		"**/tsconfig*": true
-	},
-	"files.watcherExclude": {
-		"**/composer.lock": true,
-		"**/dist/**": true,
-		"**/pnpm-lock.yaml": true,
-		"**/polyfill*": true,
-		"**/vendor/**": true,
-		"**/yarn.lock": true,
-		"**/*.class": true
-	},
-	// file ext association
-	"files.associations": {
-		"*.ssv": "csv (whitespace)",
-		"*.psv": "csv (pipe)",
-		"*.usv": "dynamic csv",
-		"*.ddb": "json",
-		"*.cnf": "properties",
-		"*rc": "properties",
-		"*config": "properties",
-		"*env": "properties",
-		"*ignore": "ignore"
-	},
-	// editor
+	// Editor
 	"window.zoomLevel": 0.4,
 	"editor.tabSize": 2,
 	"editor.fontSize": 22,
@@ -80,23 +44,53 @@
 	"workbench.editor.enablePreview": false,
 	"interactiveWindow.executeWithShiftEnter": true,
 	"workbench.editorAssociations": {
-		"*.ipynb": "jupyter-notebook"
+		"*.copilotmd": "vscode.markdown.preview.editor",
+		"*.ipynb": "jupyter-notebook",
+		"{git,gitlens}:/**/*.{md,csv,svg}": "default",
 	},
 	"workbench.localHistory.enabled": false,
-	// AI
-	"chat.editor.fontSize": 22,
-	"editor.inlineSuggest.enabled": true,
-	"github.copilot.enable": {
-		"*": true,
-		"yaml": true,
-		"plaintext": true,
-		"markdown": true,
-		"quarto": true
+	// Files
+	"files.exclude": {
+		"**/.oxen": true,
+		"**/wandb": true
 	},
-	"aide.readClipboardImage": true,
-	"aide.openaiBaseUrl": "https://40.chatgptsb.net/v1",
-	"aide.openaiKey": "sk-7qPBOvBZiTITUOG76604612302B84cDb86A2A456B620262a",
-	// terminal
+	"search.exclude": {
+		"**/.vscode/": true,
+		"**/tsconfig*": true
+	},
+	"files.watcherExclude": {
+		"**/composer.lock": true,
+		"**/dist/**": true,
+		"**/pnpm-lock.yaml": true,
+		"**/polyfill*": true,
+		"**/vendor/**": true,
+		"**/yarn.lock": true,
+		"**/*.class": true
+	},
+	"files.associations": {
+		"*.ssv": "csv (whitespace)",
+		"*.psv": "csv (pipe)",
+		"*.usv": "dynamic csv",
+		"*.ddb": "json",
+		"*.cnf": "properties",
+		"*rc": "properties",
+		"*config": "properties",
+		"*env": "properties",
+		"*ignore": "ignore"
+	},
+	// Format
+	"files.eol": "\n",
+	"editor.insertSpaces": false,
+	"editor.formatOnSave": true,
+	//"editor.defaultFormatter": "dprint.dprint",
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	//"notebook.formatOnSave.enabled": true,
+	"notebook.formatOnCellExecution": true,
+	"dprint.verbose": true,
+	"dprint.experimentalLsp": true,
+	// Terminal
 	"debug.console.fontSize": 20,
 	"debug.console.fontFamily": "Fira Code Light, Noto Sans Mono CJK SC Light, monospace",
 	"terminal.integrated.fontSize": 20,
@@ -116,18 +110,26 @@
 		"micro",
 		"editor"
 	],
-	// format
-	"files.eol": "\n",
-	"editor.insertSpaces": false,
-	"editor.formatOnSave": true,
-	//"editor.defaultFormatter": "dprint.dprint",
-	"files.insertFinalNewline": true,
-	"files.trimFinalNewlines": true,
-	"files.trimTrailingWhitespace": true,
-	//"notebook.formatOnSave.enabled": true,
-	"notebook.formatOnCellExecution": true,
-	"dprint.verbose": true,
-	"dprint.experimentalLsp": true,
+	// Outline Map
+	"editor.minimap.enabled": false,
+	"outline-map.follow": "viewport",
+	// Bookmarks
+	"bookmarks.saveBookmarksInProject": true,
+	"bookmarks.useWorkaroundForFormatters": true,
+	// AI
+	"chat.editor.fontSize": 22,
+	"editor.inlineSuggest.enabled": true,
+	"github.copilot.editor.enableCodeActions": false,
+	"github.copilot.enable": {
+		"*": true,
+		"yaml": true,
+		"plaintext": true,
+		"markdown": true,
+		"quarto": true
+	},
+	"aide.readClipboardImage": true,
+	"aide.openaiBaseUrl": "https://40.chatgptsb.net/v1",
+	"aide.openaiKey": "sk-7qPBOvBZiTITUOG76604612302B84cDb86A2A456B620262a",
 	// Git
 	"git.enableSmartCommit": true,
 	"conventionalCommits.autoCommit": false,
@@ -162,6 +164,12 @@
 		"*": "linux",
 		"zw403-*": "linux",
 		"autodl-*": "linux"
+	},
+	// fish
+	"[fish]": {
+		"editor.tabSize": 4,
+		"editor.insertSpaces": true,
+		"editor.detectIndentation": false
 	},
 	// C
 	"C_Cpp.clang_format_path": "/usr/bin/clang-format",
@@ -202,7 +210,6 @@
 	],
 	"emmet.includeLanguages": {
 		"svelte": "html"
-		// "vue": "html",
 	},
 	"npm.packageManager": "pnpm",
 	// Vue
@@ -218,7 +225,7 @@
 	"vue.codeLens.enabled": false,
 	"vue.splitEditors.icon": true,
 	"vue.updateImportsOnFileMove.enabled": false,
-	"vue.server.hybridMode": false,
+	"vue.server.hybridMode": "typeScriptPluginOnly",
 	"vue.splitEditors.layout.right": [
 		"script",
 		"scriptSetup",
@@ -231,6 +238,7 @@
 	"[vue]": {
 		"editor.defaultFormatter": "Vue.volar"
 	},
+	"i18n-ally.keystyle": "nested",
 	"i18n-ally.editor.preferEditor": true,
 	"i18n-ally.enabledParsers": [
 		"yaml"
