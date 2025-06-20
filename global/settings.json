@@ -1,8 +1,10 @@
 {
-	//"http.proxy": "http://localhost:8800",
-	//"http.proxySupport": "on",
-	// explorer
-	"workbench.colorTheme": "Flexoki Dark Green",
+	// Update
+	"update.mode": "manual",
+	"update.showReleaseNotes": false,
+	"workbench.enableExperiments": false,
+	"vsicons.dontShowNewVersionMessage": true,
+	// Explorer
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
 	"explorer.incrementalNaming": "smart",
@@ -11,23 +13,19 @@
 	"window.enableMenuBarMnemonics": false,
 	"window.titleBarStyle": "custom",
 	"window.dialogStyle": "custom",
-	"vsicons.dontShowNewVersionMessage": true,
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.quickOpen.closeOnFocusLost": false,
 	"security.workspace.trust.untrustedFiles": "open",
 	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.expand": false,
-	// Update
-	"update.mode": "manual",
-	"update.showReleaseNotes": false,
-	"workbench.enableExperiments": false,
+	"explorer.confirmPasteNative": false,
 	// Editor
 	"window.zoomLevel": 0.4,
 	"editor.tabSize": 2,
 	"editor.fontSize": 22,
-	"editor.fontLigatures": true,
-	//"editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss06', 'ss07', 'ss08'",
-	"editor.fontFamily": "Fira Code Light, Noto Sans Mono CJK SC Light, monospace",
+	// "editor.fontLigatures": true,
+	"editor.fontLigatures": "'calt', 'cv01', 'cv03', 'ss03', 'ss05', 'ss07', 'ss08'",
+	"editor.fontFamily": "Maple Mono NF, Fira Code Light, Noto Sans Mono CJK SC Light, monospace",
 	"editor.renderWhitespace": "boundary",
 	"editor.renderControlCharacters": true,
 	"editor.linkedEditing": true,
@@ -36,9 +34,13 @@
 	"editor.inlineSuggest.showToolbar": "always",
 	"editor.experimentalWhitespaceRendering": "font",
 	"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"editor.experimental.treeSitterTelemetry": true,
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": "explicit",
 	},
+	"diffEditor.codeLens": true,
+	"diffEditor.experimental.showMoves": true,
+	"diffEditor.experimental.useTrueInlineView": true,
 	"workbench.editor.tabSizing": "shrink",
 	"workbench.editor.wrapTabs": true,
 	"workbench.editor.enablePreview": false,
@@ -49,6 +51,7 @@
 		"{git,gitlens}:/**/*.{md,csv,svg}": "default",
 	},
 	"workbench.localHistory.enabled": false,
+	"cunneen-copy-breadcrumbs.separationString": ".",
 	// Files
 	"files.exclude": {
 		"**/.oxen": true,
@@ -75,8 +78,10 @@
 		"*.cnf": "properties",
 		"*rc": "properties",
 		"*config": "properties",
-		"*env": "properties",
-		"*ignore": "ignore"
+		"*ignore": "ignore",
+		"**/.ssh/config": "ssh_config",
+		"*ssh*": "ssh_config",
+		"*env*": "env",
 	},
 	// Format
 	"files.eol": "\n",
@@ -92,7 +97,6 @@
 	"dprint.experimentalLsp": true,
 	// Terminal
 	"debug.console.fontSize": 20,
-	"debug.console.fontFamily": "Fira Code Light, Noto Sans Mono CJK SC Light, monospace",
 	"terminal.integrated.fontSize": 20,
 	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.allowChords": false,
@@ -116,10 +120,21 @@
 	// Bookmarks
 	"bookmarks.saveBookmarksInProject": true,
 	"bookmarks.useWorkaroundForFormatters": true,
-	// AI
+	// Copilot
 	"chat.editor.fontSize": 22,
 	"editor.inlineSuggest.enabled": true,
-	"github.copilot.editor.enableCodeActions": false,
+	"github.copilot.selectedCompletionModel": "gemini-2.5-flash-preview-05-20",
+	"github.copilot.chat.agent.autoFix": false,
+	"github.copilot.chat.completionContext.typescript.mode": "sidecar",
+	"github.copilot.chat.notebook.followCellExecution.enabled": true,
+	"github.copilot.chat.scopeSelection": true,
+	"github.copilot.nextEditSuggestions.enabled": true,
+	"github.copilot.nextEditSuggestions.fixes": true,
+	"github.copilot.chat.codesearch.enabled": true,
+	"github.copilot.chat.generateTests.codeLens": true,
+	"github.copilot.chat.languageContext.fix.typescript.enabled": true,
+	"github.copilot.chat.languageContext.inline.typescript.enabled": true,
+	"github.copilot.chat.languageContext.typescript.enabled": true,
 	"github.copilot.enable": {
 		"*": true,
 		"yaml": true,
@@ -127,27 +142,66 @@
 		"markdown": true,
 		"quarto": true
 	},
-	"aide.readClipboardImage": true,
-	"aide.openaiBaseUrl": "https://40.chatgptsb.net/v1",
-	"aide.openaiKey": "sk-7qPBOvBZiTITUOG76604612302B84cDb86A2A456B620262a",
+	"github.copilot.advanced": {
+		"useLanguageServer": true,
+		"authProvider": "github"
+	},
+	"mcp": {
+		"servers": {
+			/* "Browser MCP": {
+				"type": "stdio",
+				"command": "mcp-server-browsermcp",
+				"args": []
+			} */
+		}
+	},
+	// Roo Code
+	"roo-cline.allowedCommands": [
+		"npm test",
+		"npm install",
+		"tsc",
+		"git log",
+		"git diff",
+		"git show"
+	],
 	// Git
 	"git.enableSmartCommit": true,
 	"conventionalCommits.autoCommit": false,
 	"conventionalCommits.emojiFormat": "emoji",
-	// CodeSnap
-	"codesnap.showWindowControls": false,
-	"codesnap.target": "window",
+	"[ignore][nuxtignore]": {
+		"editor.formatOnSave": false,
+	},
+	"gitlens.ai.model": "anthropic:claude-3-7-sonnet-20250219",
+	"gitlens.gitCommands.skipConfirmations": [
+		"fetch:command",
+		"stash-push:command",
+		"launchpad:command",
+	],
+	"gitlens.launchpad.indicator.groups": [
+		"mergeable",
+		"needs-review",
+		"follow-up",
+	],
+	// Easy CodeSnap
+	"easy-codesnap.showWindowControls": false,
+	"easy-codesnap.windowStyle": "windows",
+	"easy-codesnap.target": "window",
+	"easy-codesnap.containerPadding": "0",
+	"easy-codesnap.showLineNumbers": false,
+	"easy-codesnap.enableResizing": false,
+	"easy-codesnap.saveScale": 4,
+	"easy-codesnap.transparentBackground": true,
 	// CSV
 	"[dynamic csv]": {},
 	"[csv][dynamic csv][tsv][csv (semicolon)][csv (whitespace)]": {
-		"editor.stickyScroll.enabled": true
+		"editor.stickyScroll.enabled": true,
+		"editor.defaultFormatter": "mechatroner.rainbow-csv",
 	},
 	// rsync
 	"sync-rsync.onSaveIndividual": true,
 	//"sync-rsync.shell": "sshpass -f ~/.ssh/vm.pass ssh vm",
 	"sync-rsync.exclude": [
 		".git",
-		".vscode",
 		".svn"
 	],
 	// Remote
@@ -163,31 +217,25 @@
 	"remote.SSH.remotePlatform": {
 		"*": "linux",
 		"zw403-*": "linux",
-		"autodl-*": "linux"
+		"autodl-*": "linux",
+		"zw403-1080ti": "linux",
+		"autodl-a40": "linux",
+		"autodl-a40-earth": "linux",
+		"zw403-3060-zw403": "linux",
+		"zw403-3060-bit0r": "linux",
+		"autodl-vGPU": "linux",
+		"zw403-1080ti-bit0r": "linux",
+		"autodl-CPU": "linux",
+		"autodl-vGPU-2": "linux",
+		"vastai-a40": "linux"
 	},
 	// fish
 	"[fish]": {
 		"editor.tabSize": 4,
 		"editor.insertSpaces": true,
-		"editor.detectIndentation": false
+		"editor.detectIndentation": false,
+		"editor.defaultFormatter": "bmalehorn.vscode-fish",
 	},
-	// C
-	"C_Cpp.clang_format_path": "/usr/bin/clang-format",
-	"cmake.configureOnOpen": false,
-	"cmake.enabledOutputParsers": [
-		"cmake",
-		"gcc",
-		"gnuld"
-	],
-	// dotnet
-	"dotnetAcquisitionExtension.existingDotnetPath": [
-		{
-			"extensionId": "msazurermtools.azurerm-vscode-tools",
-			"path": "dotnet"
-		}
-	],
-	// CMake
-	"cmake.languageSupport.dotnetPath": "dotnet",
 	// HTML/CSS/SCSS
 	"html.format.wrapLineLength": 60,
 	"html.format.templating": true,
@@ -201,6 +249,14 @@
 	"scss.lint.duplicateProperties": "warning",
 	"scss.lint.ieHack": "warning",
 	"scss.lint.unknownVendorSpecificProperties": "warning",
+	"tailwindCSS.showPixelEquivalents": false,
+	"tailwindCSS.classAttributes": [
+		"class",
+		"className",
+		"ngClass",
+		"class:list",
+		"ui"
+	],
 	// Emmet
 	"emmet.variables": {
 		"lang": "zh-CN"
@@ -209,37 +265,36 @@
 		"./.vscode/emmet/"
 	],
 	"emmet.includeLanguages": {
-		"svelte": "html"
+		"svelte": "html",
+		//"vue": "html",
 	},
-	"npm.packageManager": "pnpm",
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features",
+	},
 	// Vue
+	"npm.packageManager": "pnpm",
 	"javascript.format.semicolons": "remove",
 	"typescript.format.semicolons": "remove",
 	"javascript.preferences.quoteStyle": "single",
 	"typescript.preferences.quoteStyle": "single",
+	"typescript.format.indentSwitchCase": false,
 	"javascript.updateImportsOnFileMove.enabled": "never",
 	"typescript.updateImportsOnFileMove.enabled": "never",
 	"vue.autoInsert.dotValue": true,
 	"vue.codeActions.enabled": false,
 	"vue.codeActions.askNewComponentName": false,
-	"vue.codeLens.enabled": false,
+	"vue.format.template.initialIndent": false,
 	"vue.splitEditors.icon": true,
 	"vue.updateImportsOnFileMove.enabled": false,
 	"vue.server.hybridMode": "typeScriptPluginOnly",
-	"vue.splitEditors.layout.right": [
-		"script",
-		"scriptSetup",
-		"styles"
-	],
-	"vue.splitEditors.layout.left": [
-		"template",
-		"customBlocks"
-	],
+	"[javascript][typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
 	"[vue]": {
 		"editor.defaultFormatter": "Vue.volar"
 	},
 	"i18n-ally.keystyle": "nested",
-	"i18n-ally.editor.preferEditor": true,
+	"i18n-ally.sortCompare": "locale",
 	"i18n-ally.enabledParsers": [
 		"yaml"
 	],
@@ -251,34 +306,158 @@
 	"nuxtr.piniaFiles.defaultTemplate": "setup",
 	"nuxtr.vueFiles.style.alwaysScoped": true,
 	"nuxtr.vueFiles.style.defaultLanguage": "scss",
+	// Deno
+	"deno.internalDebug": true,
+	"deno.codeLens.references": true,
+	"deno.codeLens.implementations": true,
+	"deno.codeLens.referencesAllFunctions": true,
+	"deno.codeLens.test": true,
+	// Docker
+	"[dockercompose]": {
+		"editor.defaultFormatter": "ms-azuretools.vscode-docker",
+		"AkiraVoid.formatWithCLI.command": "yamlfix '{file}' && cat '{file}'"
+	},
 	// Markdown
 	"markdown.preview.fontSize": 22,
-	"markdown-toc.detectAndAutoSetSection": false,
-	"markdown-toc.updateOnSave": false,
+	"markdown.extension.completion.enabled": true,
+	"markdown.extension.print.absoluteImgPath": false,
+	"markdown.extension.tableFormatter.normalizeIndentation": true,
+	"markdown.extension.toc.orderedList": true,
 	"pandoc.docker.enabled": false,
 	"pandoc.docxOptString": "-d pandoc",
 	"pandoc.htmlOptString": "-d pandoc",
 	"pandoc.pdfOptString": "-d pandoc",
 	"pandoc.render.openViewer": false,
-	"[markdown]": {
-		"vscode-hanzi-counter.template.tooltipTemplateName": "zh-hans"
+	"[plaintext]": {
+		"editor.formatOnSave": false,
+	},
+	"[markdown][plaintext]": {
+		"editor.defaultFormatter": "yzhang.markdown-all-in-one",
+		"vscode-hanzi-counter.template.tooltipTemplateName": "zh-hans",
 	},
 	"markdown.extension.list.toggle.candidate-markers": [
 		"-",
-		"1."
+		"1.",
 	],
 	// D2
 	"D2.previewLayout": "tala",
+	"[d2]": {
+		"editor.defaultFormatter": "Terrastruct.d2"
+	},
 	// Typst
 	"typst-lsp.exportPdf": "never",
+	// SystemD
+	"[systemd-conf]": {
+		"editor.defaultFormatter": "hangxingliu.vscode-systemd-support"
+	},
+	// Caddyfile
+	"[caddyfile]": {
+		"editor.defaultFormatter": "matthewpi.caddyfile-support",
+	},
+	// .env
+	"[env]": {
+		"editor.defaultFormatter": "IronGeek.vscode-env"
+	},
+	// properties
+	"[properties][ssh_config]": {
+		// 没有一个通用的 properties 格式化工具，所以这里不设置保存时格式化
+		"editor.formatOnSave": false,
+		"editor.defaultFormatter": "AkiraVoid.format-with-cli",
+		"AkiraVoid.formatWithCLI.command": "cfg-format '{file}'",
+	},
+	// json
+	"[json][jsonc][jsonl]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
 	// yaml
 	"redhat.telemetry.enabled": true,
 	"yaml.format.singleQuote": true,
+	"yaml.format.enable": false,
 	"[yaml][github-actions-workflow]": {
 		"editor.tabSize": 2,
 		"editor.insertSpaces": true,
-		"editor.detectIndentation": false
+		"editor.detectIndentation": false,
+		"editor.defaultFormatter": "AkiraVoid.format-with-cli",
+		"AkiraVoid.formatWithCLI.command": "yamlfix '{file}' && cat '{file}'",
 	},
+	// TOML
+	"[toml]": {
+		"editor.defaultFormatter": "tamasfe.even-better-toml"
+	},
+	// Python
+	"djlint.useVenv": false,
+	"djlint.pythonPath": "/usr/local/lib/pipx/venvs/djlint/bin/python",
+	"python.analysis.autoImportCompletions": false,
+	"python.analysis.typeCheckingMode": "basic",
+	"notebook.lineNumbers": "on",
+	"notebook.output.scrolling": true,
+	"jupyter.disableJupyterAutoStart": false,
+	"jupyter.pythonExportMethod": "commentMagics",
+	"jupyter.allowUnauthorizedRemoteConnection": true,
+	"jupyter.widgetScriptSources": [
+		"jsdelivr.com",
+		"unpkg.com"
+	],
+	"python.analysis.aiCodeActions": {
+		"convertLambdaToNamedFunction": true,
+		"convertFormatString": true,
+		"generateDocstring": true,
+		"generateSymbol": true,
+		"implementAbstractClasses": true,
+	},
+	"[python]": {
+		"editor.tabSize": 4,
+		"editor.insertSpaces": true,
+		"editor.detectIndentation": false,
+		"editor.defaultFormatter": "charliermarsh.ruff",
+	},
+	"[pip-requirements]": {
+		"editor.formatOnSave": false,
+	},
+	// "[django-html][handlebars][hbs][mustache][jinja][jinja-html][nj][njk][nunjucks][twig]": {
+	//   "editor.defaultFormatter": "monosans.djlint"
+	// },
+	"autoDocstring.docstringFormat": "pep257",
+	"autoDocstring.startOnNewLine": true,
+	// SQL
+	"sqlfluff.dialect": "postgres",
+	"sqlfluff.linter.run": "onSave",
+	"postgrestools.bin": "/usr/local/bin/postgrestools",
+	// Lua
+	"luahelper.format.use_tab": true,
+	"luahelper.format.indent_width": 1,
+	"luahelper.format.continuation_indent_width": 1,
+	"[lua]": {
+		"editor.defaultFormatter": "yinfei.luahelper",
+	},
+	// Rust
+	"rust-analyzer.server.path": "/usr/local/bin/rust-analyzer",
+	"rust-analyzer.inlayHints.typeHints.enable": false,
+	"rust-analyzer.inlayHints.closingBraceHints.enable": false,
+	"rust-analyzer.inlayHints.chainingHints.enable": false,
+	"rust-analyzer.inlayHints.parameterHints.enable": false,
+	// C
+	"C_Cpp.clang_format_path": "/usr/bin/clang-format",
+	"cmake.configureOnOpen": false,
+	"cmake.enabledOutputParsers": [
+		"cmake",
+		"gcc",
+		"gnuld"
+	],
+	// Zig
+	"zig.path": "zig",
+	"zig.zls.path": "/home/bit0r/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+	"zig.initialSetupDone": true,
+	"zig.zls.enableInlayHints": false,
+	// CMake
+	"cmake.languageSupport.dotnetPath": "dotnet",
+	// C#
+	"dotnetAcquisitionExtension.existingDotnetPath": [
+		{
+			"extensionId": "msazurermtools.azurerm-vscode-tools",
+			"path": "dotnet"
+		}
+	],
 	// PHP
 	"intelephense.stubs": [
 		"Core",
@@ -303,46 +482,6 @@
 		"superglobals",
 		"Zend OPcache"
 	],
-	// SQL
-	"sqlfluff.dialect": "mysql",
-	"sqlfluff.linter.run": "onSave",
-	// Python
-	"ruff.lint.run": "onSave",
-	"djlint.useVenv": false,
-	"djlint.pythonPath": "/usr/local/lib/pipx/venvs/djlint/bin/python",
-	"python.analysis.typeCheckingMode": "off",
-	"python.analysis.autoImportCompletions": true,
-	"notebook.lineNumbers": "on",
-	"notebook.output.scrolling": true,
-	"jupyter.disableJupyterAutoStart": false,
-	"jupyter.pythonExportMethod": "commentMagics",
-	"jupyter.allowUnauthorizedRemoteConnection": true,
-	"jupyter.widgetScriptSources": [
-		"jsdelivr.com",
-		"unpkg.com"
-	],
-	"[python]": {
-		"editor.tabSize": 4,
-		"editor.insertSpaces": true,
-		"editor.detectIndentation": false,
-		"editor.defaultFormatter": "charliermarsh.ruff",
-	},
-	// "[django-html][handlebars][hbs][mustache][jinja][jinja-html][nj][njk][nunjucks][twig]": {
-	//   "editor.defaultFormatter": "monosans.djlint"
-	// },
-	"autoDocstring.docstringFormat": "pep257",
-	"autoDocstring.startOnNewLine": true,
-	// Rust
-	"rust-analyzer.server.path": "/usr/local/bin/rust-analyzer",
-	"rust-analyzer.inlayHints.typeHints.enable": false,
-	"rust-analyzer.inlayHints.closingBraceHints.enable": false,
-	"rust-analyzer.inlayHints.chainingHints.enable": false,
-	"rust-analyzer.inlayHints.parameterHints.enable": false,
-	// Zig
-	"zig.path": "zig",
-	"zig.zls.path": "/home/bit0r/.config/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
-	"zig.initialSetupDone": true,
-	"zig.zls.enableInlayHints": false,
 	// Java
 	"boot-java.rewrite.reconcile": true,
 	"java.compile.nullAnalysis.mode": "automatic",
@@ -350,6 +489,9 @@
 	"java.sources.organizeImports.starThreshold": 8,
 	"java.sources.organizeImports.staticStarThreshold": 4,
 	"java.inlayHints.parameterNames.enabled": "none",
+	"[java]": {
+		"editor.defaultFormatter": "redhat.java"
+	},
 	"java.configuration.runtimes": [
 		{
 			"name": "JavaSE-1.8",
@@ -376,5 +518,5 @@
 	"apklab.apktoolPath": "/opt/apktool/apktool.jar",
 	"apklab.jadxDirPath": "/opt/jadx/",
 	"apklab.initProjectDirAsGit": false,
-	"apklab.updateTools": false
+	"apklab.updateTools": false,
 }

@@ -14,5 +14,22 @@
 			"</i18n>"
 		],
 		"description": "Insert an i18n block with common language options"
+	},
+	"Vue3 Skeleton": {
+		"prefix": "vue3",
+		"body": [
+			"<template>",
+			"$1",
+			"</template>",
+			"",
+			"<script setup lang=\"ts\">",
+			"$2",
+			"</script>",
+			"",
+			"<style scoped lang=\"scss\">",
+			"$3",
+			"</style>"
+		],
+		"description": "Create a Vue 3 component skeleton with script setup and scoped styles"
 	}
 }
