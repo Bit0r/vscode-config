@@ -1,10 +1,13 @@
 {
-	// Update
+	// Self
 	"update.mode": "manual",
 	"update.showReleaseNotes": false,
 	"workbench.enableExperiments": false,
 	"vsicons.dontShowNewVersionMessage": true,
+	"http.electronFetch": true,
+	"http.fetchAdditionalSupport": false,
 	// Explorer
+	"workbench.colorTheme": "Default Dark+",
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
 	"explorer.incrementalNaming": "smart",
@@ -15,25 +18,30 @@
 	"window.dialogStyle": "custom",
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.quickOpen.closeOnFocusLost": false,
+	"workbench.list.smoothScrolling": true,
 	"security.workspace.trust.untrustedFiles": "open",
 	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.expand": false,
 	"explorer.confirmPasteNative": false,
-	// Editor
-	"window.zoomLevel": 0.4,
+	"search.showLineNumbers": true,
+	// "window.zoomLevel": 0.4,
 	"editor.tabSize": 2,
-	"editor.fontSize": 22,
-	// "editor.fontLigatures": true,
-	"editor.fontLigatures": "'calt', 'cv01', 'cv03', 'ss03', 'ss05', 'ss07', 'ss08'",
+	"editor.fontSize": 20,
+	//"editor.fontLigatures": true,
+	"editor.fontLigatures": "'calt', 'cv01', 'cv03', 'cv08', 'cv61', 'cv62', 'cv41', 'ss03', 'ss07', 'ss08', 'ss11",
 	"editor.fontFamily": "Maple Mono NF, Fira Code Light, Noto Sans Mono CJK SC Light, monospace",
 	"editor.renderWhitespace": "boundary",
 	"editor.renderControlCharacters": true,
+	"editor.smoothScrolling": true,
+	"editor.cursorSmoothCaretAnimation": "on",
 	"editor.linkedEditing": true,
 	"editor.stickyScroll.enabled": false,
 	"editor.largeFileOptimizations": false,
+	"editor.guides.bracketPairs": "active",
 	"editor.inlineSuggest.showToolbar": "always",
 	"editor.experimentalWhitespaceRendering": "font",
 	"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 	"editor.experimental.treeSitterTelemetry": true,
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": "explicit",
@@ -44,13 +52,13 @@
 	"workbench.editor.tabSizing": "shrink",
 	"workbench.editor.wrapTabs": true,
 	"workbench.editor.enablePreview": false,
+	"workbench.editor.highlightModifiedTabs": true,
 	"interactiveWindow.executeWithShiftEnter": true,
 	"workbench.editorAssociations": {
 		"*.copilotmd": "vscode.markdown.preview.editor",
 		"*.ipynb": "jupyter-notebook",
 		"{git,gitlens}:/**/*.{md,csv,svg}": "default",
 	},
-	"workbench.localHistory.enabled": false,
 	"cunneen-copy-breadcrumbs.separationString": ".",
 	// Files
 	"files.exclude": {
@@ -82,6 +90,7 @@
 		"**/.ssh/config": "ssh_config",
 		"*ssh*": "ssh_config",
 		"*env*": "env",
+		"*.fish": "fish"
 	},
 	// Format
 	"files.eol": "\n",
@@ -99,6 +108,7 @@
 	"debug.console.fontSize": 20,
 	"terminal.integrated.fontSize": 20,
 	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.smoothScrolling": true,
 	"terminal.integrated.allowChords": false,
 	"terminal.integrated.sendKeybindingsToShell": true,
 	"terminal.integrated.inheritEnv": false,
@@ -120,77 +130,22 @@
 	// Bookmarks
 	"bookmarks.saveBookmarksInProject": true,
 	"bookmarks.useWorkaroundForFormatters": true,
-	// Copilot
-	"chat.editor.fontSize": 22,
-	"editor.inlineSuggest.enabled": true,
-	"github.copilot.selectedCompletionModel": "gemini-2.5-flash-preview-05-20",
-	"github.copilot.chat.agent.autoFix": false,
-	"github.copilot.chat.completionContext.typescript.mode": "sidecar",
-	"github.copilot.chat.notebook.followCellExecution.enabled": true,
-	"github.copilot.chat.scopeSelection": true,
-	"github.copilot.nextEditSuggestions.enabled": true,
-	"github.copilot.nextEditSuggestions.fixes": true,
-	"github.copilot.chat.codesearch.enabled": true,
-	"github.copilot.chat.generateTests.codeLens": true,
-	"github.copilot.chat.languageContext.fix.typescript.enabled": true,
-	"github.copilot.chat.languageContext.inline.typescript.enabled": true,
-	"github.copilot.chat.languageContext.typescript.enabled": true,
-	"github.copilot.enable": {
-		"*": true,
-		"yaml": true,
-		"plaintext": true,
-		"markdown": true,
-		"quarto": true
-	},
-	"github.copilot.advanced": {
-		"useLanguageServer": true,
-		"authProvider": "github"
-	},
-	"mcp": {
-		"servers": {
-			/* "Browser MCP": {
-				"type": "stdio",
-				"command": "mcp-server-browsermcp",
-				"args": []
-			} */
-		}
-	},
-	// Roo Code
-	"roo-cline.allowedCommands": [
-		"npm test",
-		"npm install",
-		"tsc",
-		"git log",
-		"git diff",
-		"git show"
-	],
 	// Git
 	"git.enableSmartCommit": true,
+	"git.untrackedChanges": "separate",
 	"conventionalCommits.autoCommit": false,
 	"conventionalCommits.emojiFormat": "emoji",
 	"[ignore][nuxtignore]": {
 		"editor.formatOnSave": false,
 	},
-	"gitlens.ai.model": "anthropic:claude-3-7-sonnet-20250219",
-	"gitlens.gitCommands.skipConfirmations": [
-		"fetch:command",
-		"stash-push:command",
-		"launchpad:command",
-	],
-	"gitlens.launchpad.indicator.groups": [
-		"mergeable",
-		"needs-review",
-		"follow-up",
-	],
 	// Easy CodeSnap
+	"easy-codesnap.containerPadding": "0",
 	"easy-codesnap.showWindowControls": false,
 	"easy-codesnap.windowStyle": "windows",
 	"easy-codesnap.target": "window",
-	"easy-codesnap.containerPadding": "0",
 	"easy-codesnap.showLineNumbers": false,
 	"easy-codesnap.enableResizing": false,
 	"easy-codesnap.saveScale": 4,
-	"easy-codesnap.transparentBackground": true,
 	// CSV
 	"[dynamic csv]": {},
 	"[csv][dynamic csv][tsv][csv (semicolon)][csv (whitespace)]": {
@@ -210,10 +165,10 @@
 	"remote.SSH.lockfilesInTmp": true,
 	//"remote.SSH.showLoginTerminal": true,
 	"remote.SSH.useLocalServer": false,
-	"remote.SSH.remoteServerListenOnSocket": true, // 打开此项可以提高安全性，但是可能会导致autodl连接失败
+	//"remote.SSH.remoteServerListenOnSocket": true, // 打开此项可以提高安全性，但是可能会导致autodl连接失败
 	"remote.SSH.enableX11Forwarding": false,
-	//"remote.downloadExtensionsLocally": true, // 本地下载扩展，避免网络问题
-	//"remote.SSH.localServerDownload": "always", // 本地下载服务器，避免网络问题，但有 bug: https://github.com/microsoft/vscode-remote-release/issues/9246
+	"remote.downloadExtensionsLocally": true, // 本地下载扩展，避免网络问题
+	"remote.SSH.localServerDownload": "always", // 本地下载服务器，避免网络问题，但有 bug: https://github.com/microsoft/vscode-remote-release/issues/9246
 	"remote.SSH.remotePlatform": {
 		"*": "linux",
 		"zw403-*": "linux",
@@ -240,6 +195,7 @@
 	"html.format.wrapLineLength": 60,
 	"html.format.templating": true,
 	"html.format.indentHandlebars": true,
+	"emmet.showSuggestionsAsSnippets": true,
 	"open-php-html-js-in-browser.customBrowserPath": "/usr/bin/vivaldi",
 	"open-php-html-js-in-browser.selectedBrowser": "Custom...",
 	"css.lint.duplicateProperties": "warning",
@@ -277,6 +233,7 @@
 	"typescript.format.semicolons": "remove",
 	"javascript.preferences.quoteStyle": "single",
 	"typescript.preferences.quoteStyle": "single",
+	"javascript.format.indentSwitchCase": false,
 	"typescript.format.indentSwitchCase": false,
 	"javascript.updateImportsOnFileMove.enabled": "never",
 	"typescript.updateImportsOnFileMove.enabled": "never",
@@ -318,7 +275,7 @@
 		"AkiraVoid.formatWithCLI.command": "yamlfix '{file}' && cat '{file}'"
 	},
 	// Markdown
-	"markdown.preview.fontSize": 22,
+	"markdown.preview.fontSize": 20,
 	"markdown.extension.completion.enabled": true,
 	"markdown.extension.print.absoluteImgPath": false,
 	"markdown.extension.tableFormatter.normalizeIndentation": true,
@@ -381,12 +338,13 @@
 		"AkiraVoid.formatWithCLI.command": "yamlfix '{file}' && cat '{file}'",
 	},
 	// TOML
+	"evenBetterToml.schema.links": true,
+	"evenBetterToml.semanticTokens": true,
+	"evenBetterToml.taplo.bundled": false,
 	"[toml]": {
 		"editor.defaultFormatter": "tamasfe.even-better-toml"
 	},
 	// Python
-	"djlint.useVenv": false,
-	"djlint.pythonPath": "/usr/local/lib/pipx/venvs/djlint/bin/python",
 	"python.analysis.autoImportCompletions": false,
 	"python.analysis.typeCheckingMode": "basic",
 	"notebook.lineNumbers": "on",
@@ -417,12 +375,14 @@
 	// "[django-html][handlebars][hbs][mustache][jinja][jinja-html][nj][njk][nunjucks][twig]": {
 	//   "editor.defaultFormatter": "monosans.djlint"
 	// },
-	"autoDocstring.docstringFormat": "pep257",
-	"autoDocstring.startOnNewLine": true,
-	// SQL
+	// Datebase
 	"sqlfluff.dialect": "postgres",
 	"sqlfluff.linter.run": "onSave",
 	"postgrestools.bin": "/usr/local/bin/postgrestools",
+	"dbcode.ai.modelId": "Gemini-models/gemini-2.5-flash",
+	"dbcode.pagination": true,
+	"dbcode.format.dateStyle": "Locale",
+	"dbcode.history.enabled": true,
 	// Lua
 	"luahelper.format.use_tab": true,
 	"luahelper.format.indent_width": 1,
@@ -431,11 +391,18 @@
 		"editor.defaultFormatter": "yinfei.luahelper",
 	},
 	// Rust
-	"rust-analyzer.server.path": "/usr/local/bin/rust-analyzer",
 	"rust-analyzer.inlayHints.typeHints.enable": false,
 	"rust-analyzer.inlayHints.closingBraceHints.enable": false,
 	"rust-analyzer.inlayHints.chainingHints.enable": false,
 	"rust-analyzer.inlayHints.parameterHints.enable": false,
+	"rust-analyzer.inlayHints.closureStyle": "hide",
+	"rust-analyzer.inlayHints.renderColons": false,
+	"rust-analyzer.inlayHints.genericParameterHints.const.enable": false,
+	"rust-analyzer.hover.actions.references.enable": true,
+	"rust-analyzer.lens.references.adt.enable": true,
+	"rust-analyzer.lens.references.enumVariant.enable": true,
+	"rust-analyzer.lens.references.method.enable": true,
+	"rust-analyzer.lens.references.trait.enable": true,
 	// C
 	"C_Cpp.clang_format_path": "/usr/bin/clang-format",
 	"cmake.configureOnOpen": false,
@@ -519,4 +486,49 @@
 	"apklab.jadxDirPath": "/opt/jadx/",
 	"apklab.initProjectDirAsGit": false,
 	"apklab.updateTools": false,
+	// Roo Code
+	"roo-cline.allowedCommands": [
+		"npm test",
+		"npm install",
+		"tsc",
+		"git log",
+		"git diff",
+		"git show"
+	],
+	"roo-cline.deniedCommands": [],
+	// Copilot
+	"chat.editor.fontSize": 20,
+	"editor.inlineSuggest.enabled": true,
+	"github.copilot.selectedCompletionModel": "Gemini-models/gemini-2.5-flash",
+	"github.copilot.chat.scopeSelection": true,
+	"github.copilot.nextEditSuggestions.enabled": true,
+	"github.copilot.chat.agent.autoFix": false,
+	"github.copilot.chat.codesearch.enabled": true,
+	"github.copilot.chat.completionContext.typescript.mode": "on",
+	"github.copilot.chat.generateTests.codeLens": true,
+	"github.copilot.chat.languageContext.fix.typescript.enabled": true,
+	"github.copilot.chat.languageContext.inline.typescript.enabled": true,
+	"github.copilot.chat.languageContext.typescript.enabled": true,
+	"github.copilot.chat.notebook.followCellExecution.enabled": true,
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": true,
+		"markdown": true,
+		"scminput": false,
+		"yaml": true,
+		"quarto": true,
+		"sql": false
+	},
+	"github.copilot.advanced": {
+		"useLanguageServer": true
+	},
+	"mcp": {
+		"servers": {
+			/* "Browser MCP": {
+				"type": "stdio",
+				"command": "mcp-server-browsermcp",
+				"args": []
+			} */
+		}
+	},
 }

@@ -12,6 +12,6 @@
 	// Allows to disable crash reporting.
 	// Should restart the app if the value is changed.
 	"enable-crash-reporter": true,
-	"password-store": "kwallet5",
+	"password-store": "keepassxc",
 	"locale": "zh-cn"
 }

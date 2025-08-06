@@ -14,5 +14,5 @@ cp ./runtime/*.json ~/.vscode/
 #code --list-extensions >global/extensions.txt
 # 安装插件
 for ext in (cat extensions.txt)
-    code --install-extension $ext
+    code --proxy-server=socks5://localhost --install-extension $ext
 end
