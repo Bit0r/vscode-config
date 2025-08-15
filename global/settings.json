@@ -6,8 +6,7 @@
 	"vsicons.dontShowNewVersionMessage": true,
 	"http.electronFetch": true,
 	"http.fetchAdditionalSupport": false,
-	// Explorer
-	"workbench.colorTheme": "Default Dark+",
+	// Window
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
 	"explorer.incrementalNaming": "smart",
@@ -19,12 +18,14 @@
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.quickOpen.closeOnFocusLost": false,
 	"workbench.list.smoothScrolling": true,
+	"workbench.preferredDarkColorTheme": "Default Dark+",
 	"security.workspace.trust.untrustedFiles": "open",
 	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.expand": false,
 	"explorer.confirmPasteNative": false,
-	"search.showLineNumbers": true,
 	// "window.zoomLevel": 0.4,
+	// Editor
+	"search.showLineNumbers": true,
 	"editor.tabSize": 2,
 	"editor.fontSize": 20,
 	//"editor.fontLigatures": true,
@@ -39,7 +40,7 @@
 	"editor.largeFileOptimizations": false,
 	"editor.guides.bracketPairs": "active",
 	"editor.inlineSuggest.showToolbar": "always",
-	"editor.experimentalWhitespaceRendering": "font",
+	// "editor.experimentalWhitespaceRendering": "font",
 	"editor.suggest.snippetsPreventQuickSuggestions": false,
 	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
 	"editor.experimental.treeSitterTelemetry": true,
@@ -106,6 +107,8 @@
 	"dprint.experimentalLsp": true,
 	// Terminal
 	"debug.console.fontSize": 20,
+	"terminal.integrated.shellIntegration.enabled": false,
+	"terminal.integrated.shellIntegration.history": 10000,
 	"terminal.integrated.fontSize": 20,
 	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.smoothScrolling": true,
@@ -114,7 +117,6 @@
 	"terminal.integrated.inheritEnv": false,
 	"terminal.integrated.enablePersistentSessions": false,
 	"terminal.integrated.persistentSessionReviveProcess": "never",
-	"terminal.integrated.shellIntegration.decorationsEnabled": "both",
 	"terminal.integrated.enableMultiLinePasteWarning": "never",
 	"terminal.integrated.localEchoExcludePrograms": [
 		"vim",
@@ -130,7 +132,7 @@
 	// Bookmarks
 	"bookmarks.saveBookmarksInProject": true,
 	"bookmarks.useWorkaroundForFormatters": true,
-	// Git
+	// VCS
 	"git.enableSmartCommit": true,
 	"git.untrackedChanges": "separate",
 	"conventionalCommits.autoCommit": false,
@@ -138,6 +140,7 @@
 	"[ignore][nuxtignore]": {
 		"editor.formatOnSave": false,
 	},
+	"visualjj.showSourceControlColocated": true,
 	// Easy CodeSnap
 	"easy-codesnap.containerPadding": "0",
 	"easy-codesnap.showWindowControls": false,
@@ -341,6 +344,10 @@
 	"evenBetterToml.schema.links": true,
 	"evenBetterToml.semanticTokens": true,
 	"evenBetterToml.taplo.bundled": false,
+	"evenBetterToml.formatter.alignComments": true,
+	"evenBetterToml.formatter.alignEntries": true,
+	"evenBetterToml.formatter.indentEntries": true,
+	"evenBetterToml.formatter.indentTables": true,
 	"[toml]": {
 		"editor.defaultFormatter": "tamasfe.even-better-toml"
 	},
@@ -486,16 +493,6 @@
 	"apklab.jadxDirPath": "/opt/jadx/",
 	"apklab.initProjectDirAsGit": false,
 	"apklab.updateTools": false,
-	// Roo Code
-	"roo-cline.allowedCommands": [
-		"npm test",
-		"npm install",
-		"tsc",
-		"git log",
-		"git diff",
-		"git show"
-	],
-	"roo-cline.deniedCommands": [],
 	// Copilot
 	"chat.editor.fontSize": 20,
 	"editor.inlineSuggest.enabled": true,
@@ -531,4 +528,8 @@
 			} */
 		}
 	},
+	// POML
+	"poml.languageModel.provider": "google",
+	"poml.languageModel.model": "gemini-2.5-pro",
+	"poml.languageModel.apiUrl": "https://generativelanguage.googleapis.com",
 }
