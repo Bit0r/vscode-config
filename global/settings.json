@@ -29,7 +29,8 @@
 	"editor.tabSize": 2,
 	"editor.fontSize": 20,
 	//"editor.fontLigatures": true,
-	"editor.fontLigatures": "'calt', 'cv01', 'cv03', 'cv08', 'cv61', 'cv62', 'cv41', 'ss03', 'ss07', 'ss08', 'ss11",
+	// [NOTE]: 如果设置不当，会导致渲染错误，https://github.com/microsoft/vscode/issues/258080#issuecomment-3146042255
+	"editor.fontLigatures": "'calt', 'cv01', 'cv03', 'cv08', 'cv61', 'cv62', 'cv41', 'ss03', 'ss07', 'ss08', 'ss11'",
 	"editor.fontFamily": "Maple Mono NF, Fira Code Light, Noto Sans Mono CJK SC Light, monospace",
 	"editor.renderWhitespace": "boundary",
 	"editor.renderControlCharacters": true,
@@ -496,6 +497,8 @@
 	// Copilot
 	"chat.editor.fontSize": 20,
 	"editor.inlineSuggest.enabled": true,
+	"editor.aiStats.enabled": true,
+	"workbench.settings.showAISearchToggle": true,
 	"github.copilot.selectedCompletionModel": "Gemini-models/gemini-2.5-flash",
 	"github.copilot.chat.scopeSelection": true,
 	"github.copilot.nextEditSuggestions.enabled": true,
@@ -528,8 +531,19 @@
 			} */
 		}
 	},
+	// Roo Code
+	"roo-cline.allowedCommands": [
+		"npm test",
+		"npm install",
+		"tsc",
+		"git log",
+		"git diff",
+		"git show"
+	],
+	"roo-cline.deniedCommands": [],
 	// POML
 	"poml.languageModel.provider": "google",
 	"poml.languageModel.model": "gemini-2.5-pro",
+	"poml.languageModel.apiKey": "AIzaSyDEQ0xpz4MfERiEt3_7Px4NGgPj3APeWbw",
 	"poml.languageModel.apiUrl": "https://generativelanguage.googleapis.com",
 }
