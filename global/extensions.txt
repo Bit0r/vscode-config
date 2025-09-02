@@ -55,6 +55,7 @@ mads-hartmann.bash-ide-vscode
 marimo-team.vscode-marimo
 matthewpi.caddyfile-support
 mechatroner.rainbow-csv
+mermaidchart.vscode-mermaid-chart
 mikecunneen.cunneen-copy-breadcrumbs
 ms-azuretools.vscode-containers
 ms-azuretools.vscode-docker
@@ -94,6 +95,7 @@ nuxtr.nuxt-vscode-extentions
 nuxtr.nuxtr-vscode
 oderwat.indent-rainbow
 omkov.vscode-ebnf
+openai.chatgpt
 oxc.oxc-vscode
 poml-team.poml
 primafuture.open-php-html-js-in-browser
@@ -109,6 +111,7 @@ sanderverschoor.sync-rsync-extended
 saoudrizwan.claude-dev
 selemondev.shadcn-vue
 stivo.tailwind-fold
+sunitmal.django-access-controller
 supabase.postgrestools
 surendrajat.apklab
 tamasfe.even-better-toml
@@ -136,6 +139,7 @@ vscjava.vscode-spring-boot-dashboard
 vscjava.vscode-spring-initializr
 vscode-icons-team.vscode-icons
 vue.volar
+ybq.reg-visualizer
 yinfei.luahelper
 yy0931.save-as-root
 yzhang.markdown-all-in-one

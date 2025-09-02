@@ -141,7 +141,6 @@
 	"[ignore][nuxtignore]": {
 		"editor.formatOnSave": false,
 	},
-	"visualjj.showSourceControlColocated": true,
 	// Easy CodeSnap
 	"easy-codesnap.containerPadding": "0",
 	"easy-codesnap.showWindowControls": false,
@@ -195,6 +194,10 @@
 		"editor.detectIndentation": false,
 		"editor.defaultFormatter": "bmalehorn.vscode-fish",
 	},
+	// regex
+	"reg-visualizer.hide-footer": true,
+	"reg-visualizer.hide-fork": true,
+	"reg-visualizer.hide-header": true,
 	// HTML/CSS/SCSS
 	"html.format.wrapLineLength": 60,
 	"html.format.templating": true,
@@ -531,16 +534,8 @@
 			} */
 		}
 	},
-	// Roo Code
-	"roo-cline.allowedCommands": [
-		"npm test",
-		"npm install",
-		"tsc",
-		"git log",
-		"git diff",
-		"git show"
-	],
-	"roo-cline.deniedCommands": [],
+	// OpenAI Codex
+	"chatgpt.cliExecutable": "/usr/local/bin/codex",
 	// POML
 	"poml.languageModel.provider": "google",
 	"poml.languageModel.model": "gemini-2.5-pro",

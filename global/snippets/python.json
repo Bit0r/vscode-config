@@ -12,7 +12,7 @@
 			"",
 			"from box import Box, BoxList",
 			// "from dotenv import load_dotenv",
-			"from einops import einops as ein",
+			"from einop import einops as ein",
 			"from fire import Fire",
 			"from loguru import logger",
 			"from matplotlib import pyplot as plt",

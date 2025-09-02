@@ -5,8 +5,8 @@
 			"import type { H3Event } from 'h3'",
 			"",
 			"export async function ${TM_FILENAME_BASE/(.*)\\..*/$1/}(this: H3Event$2) {",
-			"	const config = useRuntimeConfig(this)",
-			"	$0",
+			"\tconst config = useRuntimeConfig(this)",
+			"\t$0",
 			"}"
 		],
 		"description": "Nuxt Server Function"
