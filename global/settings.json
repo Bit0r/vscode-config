@@ -358,6 +358,8 @@
 	// Python
 	"python.analysis.autoImportCompletions": false,
 	"python.analysis.typeCheckingMode": "basic",
+	"python.useEnvironmentsExtension": true,
+	"python-envs.terminal.showActivateButton": true,
 	"notebook.lineNumbers": "on",
 	"notebook.output.scrolling": true,
 	"jupyter.disableJupyterAutoStart": false,
@@ -392,8 +394,9 @@
 	"postgrestools.bin": "/usr/local/bin/postgrestools",
 	"dbcode.ai.modelId": "Gemini-models/gemini-2.5-flash",
 	"dbcode.pagination": true,
-	"dbcode.format.dateStyle": "Locale",
 	"dbcode.history.enabled": true,
+	"dbcode.format.dateStyle": "Locale",
+	"dbcode.resultLocation": "panel",
 	// Lua
 	"luahelper.format.use_tab": true,
 	"luahelper.format.indent_width": 1,

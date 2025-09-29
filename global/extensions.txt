@@ -1,5 +1,6 @@
 003.autojs6-vscode-ext
 13xforever.language-x86-64-assembly
+activitywatch.aw-watcher-vscode
 adamsimon.folder-structure
 ahmadalli.vscode-nginx-conf
 akiravoid.format-with-cli
@@ -23,6 +24,7 @@ diemasmichiels.emulate
 docker.docker
 dorzey.vscode-sqlfluff
 editorconfig.editorconfig
+elazarcoh.simply-view-image-for-python-debugging
 emeryberger.scalene
 esbenp.prettier-vscode
 esdmr.fish-completion
@@ -44,11 +46,11 @@ hoovercj.vscode-settings-cycler
 intellsmi.comment-translate
 ionutvmi.reg
 irongeek.vscode-env
-istarwyh.writinghelper
 jannchie.codetime
 jptech.nuxtcomponentpopdoc
 jsonhero.jsonhero-vscode
 lehoanganh298.json-lines-viewer
+liquidibrium.peercode
 lokalise.i18n-ally
 loyieking.smalise
 mads-hartmann.bash-ide-vscode
@@ -63,9 +65,11 @@ ms-ceintl.vscode-language-pack-zh-hans
 ms-dotnettools.vscode-dotnet-runtime
 ms-playwright.playwright
 ms-python.debugpy
+ms-python.gather
 ms-python.python
 ms-python.vscode-pylance
 ms-python.vscode-python-envs
+ms-toolsai.datawrangler
 ms-toolsai.jupyter
 ms-toolsai.jupyter-keymap
 ms-toolsai.jupyter-renderers
@@ -96,7 +100,6 @@ nuxtr.nuxtr-vscode
 oderwat.indent-rainbow
 omkov.vscode-ebnf
 openai.chatgpt
-oxc.oxc-vscode
 poml-team.poml
 primafuture.open-php-html-js-in-browser
 qcqx.copyright-code
@@ -113,6 +116,7 @@ selemondev.shadcn-vue
 stivo.tailwind-fold
 sunitmal.django-access-controller
 supabase.postgrestools
+supabase.vscode-supabase-extension
 surendrajat.apklab
 tamasfe.even-better-toml
 tboox.xmake-vscode
@@ -134,6 +138,7 @@ vscjava.vscode-java-debug
 vscjava.vscode-java-dependency
 vscjava.vscode-java-pack
 vscjava.vscode-java-test
+vscjava.vscode-java-upgrade
 vscjava.vscode-maven
 vscjava.vscode-spring-boot-dashboard
 vscjava.vscode-spring-initializr
