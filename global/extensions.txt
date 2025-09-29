@@ -4,7 +4,6 @@ activitywatch.aw-watcher-vscode
 adamsimon.folder-structure
 ahmadalli.vscode-nginx-conf
 akiravoid.format-with-cli
-alefragnani.bookmarks
 alova.alova-vscode-extension
 antfu.goto-alias
 antfu.iconify
@@ -30,6 +29,7 @@ esbenp.prettier-vscode
 esdmr.fish-completion
 exiasr.hadolint
 figma.figma-vscode-extension
+fourdigits.djlsp
 frostime.git-emoji-frostime
 geezmolycos.vscode-hanzi-counter
 gera2ld.markmap-vscode
@@ -42,13 +42,14 @@ hangxingliu.vscode-systemd-support
 hansu.git-graph-2
 hellorusk.markdown-table-maker
 hfloveyy.langgraphv
+hjdarnel.vscode-change-case
 hoovercj.vscode-settings-cycler
 intellsmi.comment-translate
 ionutvmi.reg
 irongeek.vscode-env
-jannchie.codetime
 jptech.nuxtcomponentpopdoc
 jsonhero.jsonhero-vscode
+kisstkondoros.vscode-gutter-preview
 lehoanganh298.json-lines-viewer
 liquidibrium.peercode
 lokalise.i18n-ally
@@ -84,6 +85,7 @@ ms-vscode.copilot-mermaid-diagram
 ms-vscode.cpptools
 ms-vscode.debug-value-editor
 ms-vscode.hexeditor
+ms-vscode.live-server
 ms-vscode.makefile-tools
 ms-vscode.remote-explorer
 ms-vscode.remote-server
@@ -100,10 +102,13 @@ nuxtr.nuxtr-vscode
 oderwat.indent-rainbow
 omkov.vscode-ebnf
 openai.chatgpt
+philsinatra.nested-comments
 poml-team.poml
 primafuture.open-php-html-js-in-browser
 qcqx.copyright-code
 quarto.quarto
+quicktype.quicktype
+ran-codes.code-organizer
 redhat.java
 redhat.vscode-xml
 redhat.vscode-yaml
@@ -133,6 +138,7 @@ vitest.explorer
 vivaxy.vscode-conventional-commits
 vladov3000.bpftracer
 vmware.vscode-spring-boot
+vscjava.migrate-java-to-azure
 vscjava.vscode-gradle
 vscjava.vscode-java-debug
 vscjava.vscode-java-dependency
