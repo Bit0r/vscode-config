@@ -15,6 +15,7 @@
 	"window.enableMenuBarMnemonics": false,
 	// "window.titleBarStyle": "custom",
 	// "window.dialogStyle": "custom",
+	"workbench.colorTheme": "Default Dark+",
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.activityBar.location": "top",
 	"workbench.quickOpen.closeOnFocusLost": false,
@@ -26,6 +27,8 @@
 	"explorer.confirmPasteNative": false,
 	// "window.zoomLevel": 0.4,
 	// Editor
+	"editor.lineNumbers": "off",
+	"editor.glyphMargin": false,
 	"search.showLineNumbers": true,
 	"editor.tabSize": 2,
 	"editor.fontSize": 20,
@@ -390,9 +393,18 @@
 	"[pip-requirements]": {
 		"editor.formatOnSave": false,
 	},
-	// "[django-html][handlebars][hbs][mustache][jinja][jinja-html][nj][njk][nunjucks][twig]": {
-	//   "editor.defaultFormatter": "monosans.djlint"
-	// },
+	// Django
+	"[django-html][handlebars][hbs][mustache][jinja][jinja-html][nj][njk][nunjucks][twig]": {
+		"editor.defaultFormatter": "monosans.djlint"
+	},
+	"djangoTemplateLsp.enableLogging": true,
+	// "djangoTemplateLsp.djangoSettingsModule": "chapter04.settings",
+	"djlint.useGitignore": true,
+	"djlint.ignore": [
+		"T003",
+		"H030",
+		"H031"
+	],
 	// Datebase
 	"sqlfluff.dialect": "postgres",
 	"sqlfluff.linter.run": "onSave",
