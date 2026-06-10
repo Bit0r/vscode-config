@@ -44,6 +44,8 @@ echo "✔️ 已复制运行时配置到 $runtime_path"
 
 # 3. 安装插件
 echo "=> 正在通过 $editor_cmd 安装插件..."
+# 导出插件列表
+#code --list-extensions >global/extensions.txt
 for ext in (cat extensions.txt)
     $editor_cmd \
         # 使用代理服务器进行插件安装

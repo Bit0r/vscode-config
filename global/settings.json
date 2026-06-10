@@ -6,6 +6,7 @@
 	"vsicons.dontShowNewVersionMessage": true,
 	"http.electronFetch": true,
 	"http.fetchAdditionalSupport": false,
+	"http.systemCertificatesNode": true,
 	// Window
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
@@ -15,7 +16,7 @@
 	"window.enableMenuBarMnemonics": false,
 	// "window.titleBarStyle": "custom",
 	// "window.dialogStyle": "custom",
-	"workbench.colorTheme": "Visual Studio Dark",
+	"workbench.colorTheme": "Dark+",
 	"workbench.iconTheme": "vscode-icons",
 	"workbench.activityBar.location": "top",
 	"workbench.quickOpen.closeOnFocusLost": false,
@@ -52,7 +53,7 @@
 		"source.organizeImports": "explicit",
 	},
 	"diffEditor.codeLens": true,
-	"diffEditor.ignoreTrimWhitespace": false,
+	"diffEditor.ignoreTrimWhitespace": true,
 	"diffEditor.experimental.showMoves": true,
 	"diffEditor.experimental.useTrueInlineView": true,
 	"workbench.editor.tabSizing": "shrink",
@@ -86,6 +87,7 @@
 		"**/*.class": true
 	},
 	"files.associations": {
+		"*.dbclient-js": "javascript",
 		"*.ssv": "csv (whitespace)",
 		"*.psv": "csv (pipe)",
 		"*.usv": "dynamic csv",
@@ -96,7 +98,8 @@
 		"*ignore": "ignore",
 		"**/.ssh/config": "ssh_config",
 		"*ssh*": "ssh_config",
-		"*env*": "env",
+		".env*": "dotenv",
+		".dev.vars*": "dotenv",
 		"*.fish": "fish"
 	},
 	// Format
@@ -114,6 +117,7 @@
 	"dprint.experimentalLsp": true,
 	// Terminal
 	"debug.console.fontSize": 20,
+	"debug.terminal.clearBeforeReusing": true,
 	"terminal.integrated.shellIntegration.enabled": false,
 	"terminal.integrated.shellIntegration.history": 10000,
 	"terminal.integrated.fontSize": 20,
@@ -124,11 +128,15 @@
 	"terminal.integrated.inheritEnv": false,
 	"terminal.integrated.enablePersistentSessions": false,
 	"terminal.integrated.suggest.enabled": true,
-	"terminal.integrated.enableImages": true,
 	"terminal.integrated.persistentSessionReviveProcess": "never",
 	"terminal.integrated.enableMultiLinePasteWarning": "never",
 	"terminal.integrated.enableVisualBell": true,
 	"terminal.integrated.enableKittyKeyboardProtocol": false,
+	"terminal.integrated.customGlyphs": false,
+	"terminal.integrated.textBlinking": true,
+	"terminal.integrated.confirmOnExit": "hasChildProcesses",
+	"terminal.integrated.enableImages": true,
+	"terminal.integrated.gpuAcceleration": "off",
 	"terminal.integrated.suggest.providers": {
 		"lsp": true
 	},
@@ -138,7 +146,8 @@
 		"nano",
 		"tmux",
 		"micro",
-		"editor"
+		"editor",
+		"fresh"
 	],
 	// Outline Map
 	"editor.minimap.enabled": false,
@@ -149,6 +158,7 @@
 	// VCS
 	"git.enableSmartCommit": true,
 	"git.untrackedChanges": "separate",
+	"git.terminalGitEditor": true,
 	"conventionalCommits.autoCommit": false,
 	"conventionalCommits.emojiFormat": "emoji",
 	"[ignore][nuxtignore]": {
@@ -253,14 +263,10 @@
 	},
 	// Vue
 	"npm.packageManager": "pnpm",
-	"javascript.format.semicolons": "remove",
-	"typescript.format.semicolons": "remove",
-	"javascript.preferences.quoteStyle": "single",
-	"typescript.preferences.quoteStyle": "single",
-	"javascript.format.indentSwitchCase": false,
-	"typescript.format.indentSwitchCase": false,
-	"javascript.updateImportsOnFileMove.enabled": "never",
-	"typescript.updateImportsOnFileMove.enabled": "never",
+	"js/ts.format.semicolons": "remove",
+	"js/ts.preferences.quoteStyle": "single",
+	"js/ts.format.indentSwitchCase": false,
+	"js/ts.updateImportsOnFileMove.enabled": "never",
 	"vue.autoInsert.dotValue": true,
 	"vue.codeActions.enabled": false,
 	"vue.codeActions.askNewComponentName": false,
@@ -270,6 +276,8 @@
 	"vue.server.hybridMode": "typeScriptPluginOnly",
 	"oxc.path.oxfmt": "/home/bit0r/.local/bin/oxfmt",
 	"oxc.path.oxlint": "/home/bit0r/.local/bin/oxlint",
+	"oxc.trace.server": "messages",
+	"oxc.lint.run": "onSave",
 	"[javascript][typescript]": {
 		"editor.defaultFormatter": "oxc.oxc-vscode",
 	},
@@ -337,10 +345,6 @@
 	"[caddyfile]": {
 		"editor.defaultFormatter": "matthewpi.caddyfile-support",
 	},
-	// .env
-	"[env]": {
-		"editor.defaultFormatter": "IronGeek.vscode-env"
-	},
 	// properties
 	"[properties][ssh_config]": {
 		// 没有一个通用的 properties 格式化工具，所以这里不设置保存时格式化
@@ -348,6 +352,8 @@
 		"editor.defaultFormatter": "AkiraVoid.format-with-cli",
 		"AkiraVoid.formatWithCLI.command": "cfg-format '{file}'",
 	},
+	// Dotenv
+	"dotenv.enableAutocloaking": false,
 	// json
 	"[json][jsonc][jsonl]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
@@ -368,7 +374,6 @@
 	"evenBetterToml.semanticTokens": true,
 	"evenBetterToml.taplo.bundled": true,
 	"evenBetterToml.formatter.alignComments": true,
-	"evenBetterToml.formatter.alignEntries": true,
 	"evenBetterToml.formatter.indentEntries": true,
 	"evenBetterToml.formatter.indentTables": true,
 	"evenBetterToml.formatter.arrayAutoCollapse": true,
@@ -427,13 +432,15 @@
 	"sqlfluff.dialect": "postgres",
 	"sqlfluff.linter.run": "onSave",
 	"postgrestools.bin": "/usr/local/bin/postgrestools",
-	"dbcode.connections": [],
 	"dbcode.pagination": true,
 	"dbcode.history.enabled": true,
 	"dbcode.format.dateStyle": "Locale",
 	"dbcode.resultLocation": "panel",
 	"dbcode.useLanguageServer": true,
 	"dbcode.ai.mcp.autoStart": true,
+	"dbcode.ai.inlineCompletion": false,
+	"dbcode.connections": [],
+	"dbcode.cloudProviders": [],
 	// Lua
 	"luahelper.format.use_tab": true,
 	"luahelper.format.indent_width": 1,
@@ -537,7 +544,7 @@
 	"apklab.jadxDirPath": "/opt/jadx/",
 	"apklab.initProjectDirAsGit": false,
 	"apklab.updateTools": false,
-	// Copilot
+	// AI
 	"workbench.settings.showAISearchToggle": true,
 	"editor.inlineSuggest.enabled": true,
 	"editor.aiStats.enabled": true,
@@ -545,6 +552,7 @@
 	"chat.allowAnonymousAccess": true,
 	"chat.useAgentSkills": true,
 	"chat.checkpoints.showFileChanges": true,
+	"chat.agentSessionProjection.enabled": true,
 	"chat.customAgentInSubagent.enabled": true,
 	"chat.mcp.gallery.enabled": true,
 	"chat.renderRelatedFiles": true,
@@ -578,16 +586,6 @@
 		"scminput": false,
 		"yaml": true,
 		"quarto": true,
-		"sql": false
+		"sql": true
 	},
-	// OpenAI Codex
-	"chatgpt.cliExecutable": "/usr/local/bin/codex",
-	// Antigravity
-	"antigravity.marketplaceGalleryItemURL": "https://marketplace.visualstudio.com/items",
-	"antigravity.marketplaceExtensionGalleryServiceURL": "https://marketplace.visualstudio.com/_apis/public/gallery",
-	// POML
-	"poml.languageModel.provider": "google",
-	"poml.languageModel.model": "gemini-2.5-pro",
-	"poml.languageModel.apiKey": "AIzaSyDEQ0xpz4MfERiEt3_7Px4NGgPj3APeWbw",
-	"poml.languageModel.apiUrl": "https://generativelanguage.googleapis.com",
 }
