@@ -159,6 +159,8 @@
 	"git.enableSmartCommit": true,
 	"git.untrackedChanges": "separate",
 	"git.terminalGitEditor": true,
+	"git.enableCommitSigning": true,
+	"git.blame.editorDecoration.enabled": true,
 	"conventionalCommits.autoCommit": false,
 	"conventionalCommits.emojiFormat": "emoji",
 	"[ignore][nuxtignore]": {

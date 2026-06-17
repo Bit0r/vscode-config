@@ -55,6 +55,9 @@ hjdarnel.vscode-change-case
 hoovercj.vscode-settings-cycler
 intellsmi.comment-translate
 ionutvmi.reg
+jj-view.jj-view
+jjk.jjk
+jjx.jjx
 jptech.nuxtcomponentpopdoc
 jsonhero.jsonhero-vscode
 kisstkondoros.vscode-gutter-preview
@@ -142,7 +145,6 @@ tyriar.sort-lines
 ultralytics.ultralytics-snippets
 upstash.context7-mcp
 urosmrkobrada.jinja-lsp
-visualjj.visualjj
 vitest.explorer
 vivaxy.vscode-conventional-commits
 vladov3000.bpftracer
